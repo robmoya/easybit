@@ -14,3 +14,26 @@
 // body {
 //     background-image: url('./images/header-bg.png');
 // }
+
+
+.font-spacing {
+  letter-spacing: .3em;
+}
+.bg-full {
+  background-size: cover;
+  background-position: center center;
+}
+.bg-mountain {
+  background-image: url('./images/section2-bg.png');
+}
+.bg-computer {
+  background-image: url('./images/section1-bg.png');
+}
+.bg-waves {
+  background-image: url('./images/section3-bg.png');
+}
+.bg-pattern {
+  background-image: url('./images/header-pattern.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}

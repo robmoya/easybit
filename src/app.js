@@ -1,6 +1,7 @@
 const css = require('./app.scss');
 require('bootstrap');
 window.AOS = require('aos');
+
 AOS.init({
     offset: 200,
     duration: 600,
