@@ -59,9 +59,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Project Demo',
+      title: 'Homepage',
       hash: true,
-      template: './src/index.html'
+      template: './src/index.html',
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Buy',
+      hash: true,
+      template: './src/buy.html',
+      filename: 'buy.html',
+      chunks:['app']
     }),
     new ExtractTextPlugin({
       filename: 'app.css',
