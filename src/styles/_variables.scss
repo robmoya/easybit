@@ -13,7 +13,6 @@ $white:    #fff !default;
 // $gray-100: #f8f9fa !default;
 $gray-100: #F7F7F7 !default;
 
-
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -153,7 +152,8 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
+// $link-color:                theme-color("primary") !default;
+$link-color:                theme-color("info") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
@@ -406,7 +406,8 @@ $input-bg:                              $white !default;
 $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-700 !default;
-$input-border-color:                    $gray-400 !default;
+// $input-border-color:                    $gray-400 !default;
+$input-border-color:                    $input-bg !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;
 
@@ -444,7 +445,8 @@ $form-check-input-margin-x:             .25rem !default;
 $form-check-inline-margin-x:            .75rem !default;
 $form-check-inline-input-margin-x:      .3125rem !default;
 
-$form-group-margin-bottom:              1rem !default;
+// $form-group-margin-bottom:              1rem !default;
+$form-group-margin-bottom:              1.5rem !default;
 
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  $gray-200 !default;
@@ -665,9 +667,11 @@ $card-spacer-x:                     1.25rem !default;
 // $card-border-width:                 $border-width !default;
 $card-border-width:                 0px !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+// $card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $gray-300 !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+// $card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $white !default;
 $card-bg:                           $white !default;
 
 $card-img-overlay-padding:          1.25rem !default;

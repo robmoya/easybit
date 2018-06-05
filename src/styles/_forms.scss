@@ -14,6 +14,7 @@
   background-color: $input-bg;
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @if $enable-rounded {
@@ -330,4 +331,10 @@ select.form-control-lg {
       margin-bottom: 0;
     }
   }
+}
+
+label {
+  font-size: $font-size-sm;
+  color: $text-muted;
+  text-transform: uppercase;
 }

@@ -71,6 +71,34 @@ module.exports = {
       filename: 'buy.html',
       chunks:['app']
     }),
+    new HtmlWebpackPlugin({
+      title: 'Buy',
+      hash: true,
+      template: './src/buy2.html',
+      filename: 'buy2.html',
+      chunks:['app']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Signup',
+      hash: true,
+      template: './src/signup.html',
+      filename: 'signup.html',
+      chunks:['app']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Sign In',
+      hash: true,
+      template: './src/signin.html',
+      filename: 'signin.html',
+      chunks:['app']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Thanks for Registering',
+      hash: true,
+      template: './src/thanks.html',
+      filename: 'thanks.html',
+      chunks:['app']
+    }),
     new ExtractTextPlugin({
       filename: 'app.css',
       disable: !isProd,
