@@ -65,19 +65,25 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'Buy',
+      title: 'Wallets',
       hash: true,
-      template: './src/buy.html',
-      filename: 'buy.html',
-      chunks:['app']
+      template: './src/wallets.html',
+      filename: 'wallets.html'
     }),
-    new HtmlWebpackPlugin({
-      title: 'Buy',
-      hash: true,
-      template: './src/buy2.html',
-      filename: 'buy2.html',
-      chunks:['app']
-    }),
+    // new HtmlWebpackPlugin({
+    //   title: 'Buy',
+    //   hash: true,
+    //   template: './src/buy.html',
+    //   filename: 'buy.html',
+    //   chunks:['app']
+    // }),
+    // new HtmlWebpackPlugin({
+    //   title: 'Buy',
+    //   hash: true,
+    //   template: './src/buy2.html',
+    //   filename: 'buy2.html',
+    //   chunks:['app']
+    // }),
     new HtmlWebpackPlugin({
       title: 'Signup',
       hash: true,
