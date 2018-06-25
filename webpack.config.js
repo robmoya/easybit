@@ -70,6 +70,12 @@ module.exports = {
       template: './src/wallets.html',
       filename: 'wallets.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Transactions',
+      hash: true,
+      template: './src/transactions.html',
+      filename: 'transactions.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,

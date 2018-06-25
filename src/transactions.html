@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Easybit Transactions</title>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo-easybit.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mr-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">HOME
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./wallets.html">WALLETS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./transactions.html">TRANSACTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./signup.html">
+              <i class="fa fa-user"></i> ACCOUNT: LORAINE</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn btn-secondary my-2 my-sm-0" href="./signin.html">SIGN OUT</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tickers -->
+  <div class="bg-dark mt-5 pt-5">
+    <div class="container">
+      <div class="row pb-1">
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <span class="text-muted">graph</span>
+        </div>
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <span class="text-muted">graph</span>
+        </div>
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <span class="text-muted">graph</span>
+        </div>
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <span class="text-muted">graph</span>
+        </div>
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <small class="text-muted">graph</small>
+        </div>
+        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
+          <div class="d-flex flex-column">
+            <small class="font-weight-bold">
+              <span class="text-white">Bitcoin</span>
+              <span class="text-success">+23.00</span>
+            </small>
+            <small class="text-muted">24743.00 -0.09%</small>
+            <small class="text-muted">6:05 AM</small>
+          </div>
+          <span class="text-muted">graph</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-full bg-bubbles py-5">
+    <div class="container transactions">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Transactions</h3>
+          <hr class="mt-1">
+        </div>
+        <div class="col-sm-12">
+          <div class="d-flex justify-content-left align-items-start">
+            <div class="card col-sm-12">
+              <div class="select-account__container mt-5">
+                <p>Select Account</p>
+                <select class="form-control ml-3">
+                  <option value="" selected>BCT</option>
+                  <option value="">--</option>
+                </select>
+              </div>
+
+              <div class="select-range__container mt-5">
+                <p>Select Range</p>
+                <div class="select-group">
+                  <p>From</p>
+                  <select name="month">
+                      <option value="January">January</option>
+                      <option value="February">February</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+                    <select name="day">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                </div>
+                <div class="select-group">
+                  <p>From</p>
+                  <select name="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                  <select name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card-header">
+                <button class="btn btn-export">Export list to Excel</button>
+              </div>
+              <div class="card-body p-0">
+                <table class="table table-lg table-striped">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Date</th>
+                      <th scope="col">Market</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Fee</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2018-050-06</td>
+                      <td>BTC/USDT</td>
+                      <td>Buy</td>
+                      <td>9524.44152656</td>
+                      <td>0.09988299</td>
+                      <td>0.000014982 BCT (0.15%)</td>
+                      <td>951.32969775 USDT</td>
+                    </tr>
+                    <tr>
+                      <td>2018-050-06</td>
+                      <td>BTC/USDT</td>
+                      <td>Buy</td>
+                      <td>9524.44152656</td>
+                      <td>0.09988299</td>
+                      <td>0.000014982 BCT (0.15%)</td>
+                      <td>951.32969775 USDT</td>
+                    </tr>
+                    <tr>
+                      <td>2018-050-06</td>
+                      <td>BTC/USDT</td>
+                      <td>Buy</td>
+                      <td>9524.44152656</td>
+                      <td>0.09988299</td>
+                      <td>0.000014982 BCT (0.15%)</td>
+                      <td>951.32969775 USDT</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-muted">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="./images/logo-easybit.png" alt="">
+          <p class="text-muted">Copyright</p>
+        </div>
+        <div class="col-sm-4">
+          <strong>Additional Pages</strong>
+        </div>
+        <div class="col-sm-4">
+          <strong>Subscribe</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src='app.bundle.js'></script>
+</body>
+
+</html>

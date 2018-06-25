@@ -49,6 +49,34 @@ hr {
   border: 1px solid #444448;
 }
 
+// Transactions page
+.transactions {
+  .btn-export {
+    float: right;
+  }
+  .card-header {
+    border-left: none;
+  }
+  .select-account__container {
+    p,
+    select {
+      display: inline-block;
+    }
+    select {
+      box-shadow: none;
+      width: auto;
+    }
+  }
+  .select-range__container {
+    .select-group {
+      p, 
+      select {
+        display: inline-block;
+      }
+    }
+  }
+}
+
 // Wallet Page Title
 .wallet-title {
   img {
