@@ -45,10 +45,20 @@
   min-height: 90vh;
 }
 
-.hr-divider {
+hr {
   border: 1px solid #444448;
 }
 
+// Wallet Page Title
+.wallet-title {
+  img {
+    height: 40px;
+    vertical-align: top;
+  }
+  h3 {
+    display: inline-block;
+  }
+}
 // WALLETS: BITCOIN TAB CONTENT
 .btc-tabs-content {
   input {
