@@ -44,3 +44,72 @@
 .view {
   min-height: 90vh;
 }
+
+.hr-divider {
+  border: 1px solid #444448;
+}
+
+// WALLETS: BITCOIN TAB CONTENT
+.btc-tabs-content {
+  input {
+    box-shadow: none;
+    font-weight: bold;
+  }
+  .btc-deposit,
+  .btc-withdrawal {
+    small {
+      display: block;
+      line-height: 25px;
+    }
+  }
+  .btc-deposit__disclaimer {
+    color: #c39b6e;
+    &:before {
+      content:"• ";
+    }
+  }
+  .btc-deposit__address-btns {
+    text-align: right;
+  }
+  .btc-notes {
+    ul {
+      padding-left: 20px;
+    }
+  }
+  .btn-qr,
+  .btn-copy {
+    height: 37.5px;
+    img {
+      height: 100%;
+      vertical-align: bottom;
+      width: auto;
+    }
+  }
+  .btc-withdrawal {
+    button {
+      color: white;
+      font-weight: 300;
+    }
+    .transaction-fee,
+    .total {
+      p {
+        display: inline-block;
+        width: 120px;
+      }
+      span {
+        float: right;
+        font-weight: bold;
+      }
+    }
+    .transaction-fee {
+      span {
+        color: red;
+      }
+    }
+    .total {
+      p {
+        text-align: right;
+      }
+    }
+  }
+}
