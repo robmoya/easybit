@@ -248,13 +248,14 @@
                   <div class="tab-pane fade hide" id="btc" role="tabpanel" aria-labelledby="btc-tab">
                     <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
                       <li class="nav-item">
-                        <a class="nav-link active" id="btcBuy-tab" data-toggle="tab" href="#btcBuy" role="tab" aria-controls="btcBuy" aria-selected="true">BUY</a>
+                        <a class="nav-link" id="btcBuy-tab" data-toggle="tab" href="#btcBuy" role="tab" aria-controls="btcBuy" aria-selected="true">BUY</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="btcSell-tab" data-toggle="tab" href="#btcSell" role="tab" aria-controls="btcSell" aria-selected="false">SELL</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="btcDeposit-tab" data-toggle="tab" href="#btcDeposit" role="tab" aria-controls="btcDeposit" aria-selected="false">DEPOSIT</a>
+                        <a class="nav-link active" id="btcDeposit-tab" data-toggle="tab" href="#btcDeposit" role="tab" aria-controls="btcDeposit"
+                          aria-selected="false">DEPOSIT</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="btcWithdrawal-tab" data-toggle="tab" href="#btcWithdrawal" role="tab" aria-controls="btcWithdrawal"
@@ -263,44 +264,80 @@
                     </ul>
 
                     <div class="tab-content btc-tabs-content">
-                      <div class="tab-pane btc-buy active" id="btcBuy" role="tabpanel" aria-labelledby="btcBuy-tab">1 BUY</div>
+                      <div class="tab-pane btc-buy" id="btcBuy" role="tabpanel" aria-labelledby="btcBuy-tab">1 BUY</div>
                       <div class="tab-pane btc-sell" id="btcSell" role="tabpanel" aria-labelledby="btcSell-tab">2 SELL</div>
 
                       <!-- btc-desposit tab -->
-                      <div class="tab-pane btc-deposit" id="btcDeposit" role="tabpanel" aria-labelledby="btcDeposit-tab">
-                        <div>
-                          <h4>BTC Deposit</h4>
-                          <small>1.2000000 BTC available balance</small>
-                          <small>0.2000000 BTC is held on orders</small>
-                          <hr>
-                        </div>
-                        <div>
-                          <small class="btc-deposit__disclaimer">
-                            Send only BTC to this deposit address. Sending any other copin or token to this address may result in the lose f your desposit.
-                          </small>
-                          <p class="mt-4">BTC Deposit Address:</p>
-                          <input type="text" class="form-control deposit-address" aria-describedby="depositAddress" id="despositAddress">
-                          <div class="btc-deposit__address-btns mt-3">
-                            <button class="btn btn btn-outline-secondary btn-qr">
-                              <img src="./images/code_QR.svg" alt="QR code"> Show QR Code
-                            </button>
-                            <button class="btn btn btn-outline-secondary btn-copy">
-                              <img src="./images/copy.png" alt="copy action image"> Copy Address
-                            </button>
+                      <div class="tab-pane btc-deposit active" id="btcDeposit" role="tabpanel" aria-labelledby="btcDeposit-tab">
+                        <div class="btc-deposit__container">
+                          <div>
+                            <h4>BTC Deposit</h4>
+                            <small>1.2000000 BTC available balance</small>
+                            <small>0.2000000 BTC is held on orders</small>
+                            <hr>
                           </div>
-                          <hr class="mt-4">
+                          <div>
+                            <small class="btc-deposit__disclaimer">
+                              Send only BTC to this deposit address. Sending any other copin or token to this address may result in the lose f your desposit.
+                            </small>
+                            <p class="mt-4">BTC Deposit Address:</p>
+                            <input type="text" class="form-control deposit-address" aria-describedby="depositAddress" id="despositAddress">
+                            <div class="btc-deposit__address-btns mt-3">
+                              <button class="btn btn btn-outline-primary btn-qr">
+                                <img src="./images/code_QR.svg" alt="QR code"> Show QR Code
+                              </button>
+                              <button class="btn btn btn-outline-primary btn-copy">
+                                <img src="./images/copy.png" alt="copy action image"> Copy Address
+                              </button>
+                            </div>
+                            <hr class="mt-4">
+                          </div>
+                          <div class="btc-deposit__notes">
+                            <p class="mt-4 mb-1">Please note</p>
+                            <ul>
+                              <li>
+                                <small>Coins will be deposited immediately after 2 network confirmation</small>
+                              </li>
+                              <li>
+                                <small>After making a deposit, you can track its progress on the
+                                  <a href="#">TRANSACTIONS</a> page.</small>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="btc-deposit__notes">
-                          <p class="mt-4 mb-1">Please note</p>
-                          <ul>
-                            <li>
-                              <small>Coins will be deposited immediately after 2 network confirmation</small>
-                            </li>
-                            <li>
-                              <small>After making a deposit, you can track its progress on the
-                                <a href="#">TRANSACTIONS</a> page.</small>
-                            </li>
-                          </ul>
+
+                        <p class="mb-1">Transactions</p>
+                        <div class="btc__transactions">
+                          <table class="table table-sm">
+                            <thead class="thead-light">
+                              <tr>
+                                <th scope="col">Market</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>BTC/CAD</td>
+                                <td>Buy</td>
+                                <td>9524.44</td>
+                                <td>0.0998829</td>
+                                <td>951.367</td>
+                                <td>2018-050-06</td>
+                              </tr>
+                              <tr>
+                                <td>BTC/CAD</td>
+                                <td>Sell</td>
+                                <td>9524.44</td>
+                                <td>0.0998829</td>
+                                <td>951.367</td>
+                                <td>2018-050-06</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
 
@@ -364,6 +401,40 @@
                               </small>
                             </li>
                           </ul>
+                        </div>
+
+                        <p class="mb-1">Transactions</p>
+                        <div class="btc__transactions">
+                          <table class="table table-sm">
+                            <thead class="thead-light">
+                              <tr>
+                                <th scope="col">Market</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Total</th>
+                                <th scope="col">Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>BTC/CAD</td>
+                                <td>Buy</td>
+                                <td>9524.44</td>
+                                <td>0.0998829</td>
+                                <td>951.367</td>
+                                <td>2018-050-06</td>
+                              </tr>
+                              <tr>
+                                <td>BTC/CAD</td>
+                                <td>Sell</td>
+                                <td>9524.44</td>
+                                <td>0.0998829</td>
+                                <td>951.367</td>
+                                <td>2018-050-06</td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                       </div>
                     </div>

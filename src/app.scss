@@ -88,6 +88,7 @@ hr {
   }
   .btn-qr,
   .btn-copy {
+    color: #000;
     height: 37.5px;
     img {
       height: 100%;
@@ -120,6 +121,16 @@ hr {
       p {
         text-align: right;
       }
+    }
+  }
+
+  .btc__transactions {
+    background: #e9ecef;
+    min-height: 300px;
+
+    table {
+      border: none;
+      text-align: center
     }
   }
 }
