@@ -73,10 +73,16 @@ hr {
   .card-header {
     border-left: none;
   }
+  .card-body {
+    min-height: 200px;
+  }
   .form-control:focus {
     border: none;
     border-color: none;
     box-shadow: none;
+  }
+  .no-results {
+    font-weight: 300;
   }
   .select-day {
     width: 25px;
@@ -95,7 +101,6 @@ hr {
   .select-range__container {
     border: 1px solid #444448;
     .select-group__container {
-      display: inline-block;
       float: right;
     }
     .select-group {
