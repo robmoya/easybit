@@ -51,27 +51,60 @@ hr {
 
 // Transactions page
 .transactions {
+  select {
+    background: url(./images/down-chevron.svg) no-repeat right center;
+    background-size: 10px;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none; /* for webkit browsers */
+    -moz-appearance: none; /* for firefox */
+    appearance: none; /* for modern browsers */
+    outline: 0;
+    width: auto;
+    
+    &::-ms-expand {
+      display:none;
+   }
+  }
   .btn-export {
     float: right;
   }
   .card-header {
     border-left: none;
   }
+  .form-control:focus {
+    border: none;
+    border-color: none;
+    box-shadow: none;
+  }
+  .select-day {
+    width: 25px;
+  }
+  .select-month {
+    width: 40px;
+  }
+  .select-year {
+    width: 52px;
+  }
   .select-account__container {
-    p,
-    select {
+    p {
       display: inline-block;
-    }
-    select {
-      box-shadow: none;
-      width: auto;
     }
   }
   .select-range__container {
+    border: 1px solid #444448;
+    .select-group__container {
+      display: inline-block;
+      float: right;
+    }
     .select-group {
-      p, 
-      select {
+      p {
         display: inline-block;
+      }
+      p,
+      select {
+        margin-right: 20px;
       }
     }
   }
