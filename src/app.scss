@@ -49,7 +49,58 @@ hr {
   border: 1px solid #444448;
 }
 
-// Transactions page
+
+//** Custom Card **//
+.custom__card {
+  background: white;
+  border: 1px solid #444448;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+
+  .custom-card__content-left,
+  .custom-card__content-right {
+    display: inline-block;
+  }
+  .custom-card__content-left {
+    div {
+      display: inline-block;
+    }
+    img {
+      height: 40px;
+      vertical-align: initial;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .custom-card__content-right {
+    p {
+      display: inline-block;
+      width: 80%;
+    }
+  }
+  .left-arrow {
+    float: right;
+    position: relative;
+    width: 15%;
+    &:after {
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      margin-top: 50%;
+      right: 0;
+      transform: rotate(45deg);
+      vertical-align: top;
+      width: 20px;
+    }
+  }
+}
+
+//** Transactions page **//
 .transactions {
   select {
     background: url(./images/down-chevron.svg) no-repeat right center;
@@ -69,9 +120,6 @@ hr {
   }
   .btn-export {
     float: right;
-  }
-  .card-header {
-    border-left: none;
   }
   .card-body {
     min-height: 200px;
@@ -115,7 +163,7 @@ hr {
   }
 }
 
-// Wallet Page Title
+//** Wallet Page Title **//
 .wallet-title {
   img {
     height: 40px;
@@ -125,7 +173,8 @@ hr {
     display: inline-block;
   }
 }
-// WALLETS: BITCOIN TAB CONTENT
+
+//** WALLETS: BITCOIN TAB CONTENT **//
 .btc-tabs-content {
   input {
     box-shadow: none;
@@ -195,8 +244,15 @@ hr {
     .card-header {
       border-left: 0;
     }
-    table {
-      text-align: center
-    }
+  }
+}
+
+//** WALLETS: CAD TAB CONTENT **//
+
+
+.cad-tabs-content,
+.transactions {
+  .card-header {
+    border-left: none;
   }
 }

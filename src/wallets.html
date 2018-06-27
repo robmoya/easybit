@@ -167,80 +167,203 @@
               <div class="card-body">
 
                 <div class="tab-content" id="v-pills-tabContent">
+
                   <!-- CAD -->
                   <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <ul class="nav nav-tabs mb-2">
-                          <li class="nav-item">
-                            <a class="nav-link " href="#">DEPOSIT</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" href="#">WITHDRAWAL</a>
-                          </li>
-                        </ul>
-                        <small>All fiat (CAD$) withdrawals will be credited to a prepaid card assigned to you. If you have not yet
-                          receuved your prepaid card, please open a ticket to request for one to be sent to you at the soonest.</small>
-                        <form className="py-3">
-                          <div class="form-group">
-                            <div class="form-inline">
-                              <label>ENTER AMOUNT TO WITHDRAW</label>
-                              <input type="password" class="form-control ml-3" aria-describedby="passwordHelpInline">
+
+                    <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="cadBuy-tab" data-toggle="tab" href="#cadBuy" role="tab" aria-controls="cadBuy" aria-selected="true">BUY</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="cadSell-tab" data-toggle="tab" href="#cadSell" role="tab" aria-controls="cadSell" aria-selected="false">SELL</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="cadDeposit-tab" data-toggle="tab" href="#cadDeposit" role="tab" aria-controls="cadDeposit" aria-selected="false">DEPOSIT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="cadWithdrawal-tab" data-toggle="tab" href="#cadWithdrawal" role="tab" aria-controls="false" aria-selected="false">WITHDRAWAL</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content cad-tabs-content">
+                      <div class="tab-pane cad-buy active" id="cadBuy" role="tabpanel" aria-labelledby="cadBuy-tab">1 BUY</div>
+                      <div class="tab-pane cad-sell" id="cadSell" role="tabpanel" aria-labelledby="cadSell-tab">2 SELL</div>
+
+                      <!-- cad-desposit tab -->
+                      <div class="tab-pane cad-deposit" id="cadDeposit" role="tabpanel" aria-labelledby="cadDeposit-tab">
+                        <div class="cad-deposit__container">
+                          <div>
+                            <h4 class="mt-4">CAD DEPOSIT</h4>
+                            <hr>
+                          </div>
+
+                          <div class="col-sm-12 custom__card">
+                            <div class="row">
+                              <div class="col-sm-4 custom-card__content-left">
+                                <img src="./images/dollar.svg" alt="">
+                                <div>
+                                  <p mb-1>Interac E-Transfer</p>
+                                  <small>1 - 3 Days</small>
+                                </div>
+                              </div>
+                              <div class="col-sm-8 custom-card__content-right">
+                                <p>
+                                  Deposit Funds using Interac E-Transfer, log into your online banking to start the transfer
+                                </p>
+                                <span class="left-arrow"></span>
+                                <div class="amounts">
+                                  <small class="text-primary">Min: $1000</small>
+                                  <small class="text-primary">Max: $3000</small>
+                                </div>
+                              </div>
                             </div>
-                            <small class="text-muted form-text">Withdrawable amount: CAD$10,000.00, Minimum withdrawal is CAD$100.00</small>
                           </div>
-                          <div class="form-group form-inline">
-                            <label>PREPAID CARD TO CREDIT</label>
-                            <select class="form-control ml-3 custom-select">
-                              <option value="" selected>1234-5678-9012-1234</option>
-                              <option value="">--</option>
-                            </select>
+
+                          <div class="col-sm-12 custom__card">
+                            <div class="row">
+                              <div class="col-sm-4 custom-card__content-left">
+                                <img src="./images/dollar.svg" alt="">
+                                <div>
+                                  <p mb-1>Interac E-Transfer</p>
+                                  <small>1 - 3 Days</small>
+                                </div>
+                              </div>
+                              <div class="col-sm-8 custom-card__content-right">
+                                <p>
+                                  Deposit Funds using Interac E-Transfer, log into your online banking to start the transfer
+                                </p>
+                                <span class="left-arrow"></span>
+                                <div class="amounts">
+                                  <small class="text-primary">Min: $1000</small>
+                                  <small class="text-primary">Max: $3000</small>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="form-group">
-                            <button class="btn  btn-primary">SUBMIT WITHDRAWAL REQUEST</button>
-                          </div>
-                          <div class="form-group">
-                            <small class="form-text text-muted">Notes:</small>
+
+                          <hr>
+                          
+                          <div class="cad-deposit__notes">
+                            <p class="mt-4 mb-1">Fund Your Easybit Account</p>
                             <ul class="list-unstyled">
                               <li>
-                                <small>1. You will receive an email to confirm your withdrawal request. Click on APPROVE to process
-                                  the withdrawal or DENY if you would like to cancel the withdrawal.</small>
+                                <small>Step 1. Deposit CAD to your Easybit Wallet</small>
                               </li>
                               <li>
-                                <small>2. Withdrawal requests not approved within 3 hours will be automatically cancelled. </small>
+                                <small>Step 2. Deposit CAD using either Interac E-Transfer or Wire-Transfer</small>
                               </li>
                               <li>
-                                <small>3. A bank fee of $3.00 will be applied to all withdrawals.</small>
+                                <small>
+                                  Step 3. You will receive an email notification when we have received abd approved the fund transfer. For international wires,
+                                  this can take up to 10 days.
+                                </small>
                               </li>
                             </ul>
                           </div>
-                        </form>
-                        <div class="card">
+                        </div>
+
+                        <div class="card cad__transactions">
                           <div class="card-header">
-                            Recent Withdrawals
+                            <p class="mb-1">Recent Deposit</p>
                           </div>
                           <div class="card-body p-0">
-                            <table class="table table-sm">
+                            <table class="table table-sm text-center">
                               <thead class="thead-light">
                                 <tr>
                                   <th scope="col">Amount</th>
+                                  <th scope="col">Type</th>
                                   <th scope="col">Request Date</th>
                                   <th scope="col">Status</th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
-                                  <td>$5,000.00</td>
-                                  <td>Jun 07 2018 - 05:00pm</td>
-                                  <td class="text-primary">PROCESSING</td>
+                                  <td>$250</td>
+                                  <td>E-Transfer</td>
+                                  <td>Jun 15 2018 - 07:00pm</td>
+                                  <td class="text-primary">Processing</td>
                                 </tr>
                                 <tr>
-                                  <td>$10,000.00</td>
-                                  <td>Jun 01 2018 - 10:34pm</td>
-                                  <td class="text-primary">COMPLETE</td>
+                                  <td>$250</td>
+                                  <td>E-Transfer</td>
+                                  <td>Jun 15 2018 - 07:00pm</td>
+                                  <td class="text-primary">Processing</td>
                                 </tr>
                               </tbody>
                             </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- cad-withdrawal tab -->
+                      <div class="tab-pane cad-withdrawal" id="cadWithdrawal" role="tabpanel" aria-labelledby="cadWithdrawal-tab">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <small>All fiat (CAD$) withdrawals will be credited to a prepaid card assigned to you. If you have not
+                              yet receuved your prepaid card, please open a ticket to request for one to be sent to you at
+                              the soonest.</small>
+                            <form className="py-3">
+                              <div class="form-group">
+                                <div class="form-inline">
+                                  <label>ENTER AMOUNT TO WITHDRAW</label>
+                                  <input type="password" class="form-control ml-3" aria-describedby="passwordHelpInline">
+                                </div>
+                                <small class="text-muted form-text">Withdrawable amount: CAD$10,000.00, Minimum withdrawal is CAD$100.00</small>
+                              </div>
+                              <div class="form-group form-inline">
+                                <label>PREPAID CARD TO CREDIT</label>
+                                <select class="form-control ml-3 custom-select">
+                                  <option value="" selected>1234-5678-9012-1234</option>
+                                  <option value="">--</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <button class="btn  btn-primary">SUBMIT WITHDRAWAL REQUEST</button>
+                              </div>
+                              <div class="form-group">
+                                <small class="form-text text-muted">Notes:</small>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <small>1. You will receive an email to confirm your withdrawal request. Click on APPROVE to
+                                      process the withdrawal or DENY if you would like to cancel the withdrawal.</small>
+                                  </li>
+                                  <li>
+                                    <small>2. Withdrawal requests not approved within 3 hours will be automatically cancelled. </small>
+                                  </li>
+                                  <li>
+                                    <small>3. A bank fee of $3.00 will be applied to all withdrawals.</small>
+                                  </li>
+                                </ul>
+                              </div>
+                            </form>
+                            <div class="card">
+                              <div class="card-header">
+                                Recent Withdrawals
+                              </div>
+                              <div class="card-body p-0">
+                                <table class="table table-sm text-center">
+                                  <thead class="thead-light">
+                                    <tr>
+                                      <th scope="col">Amount</th>
+                                      <th scope="col">Request Date</th>
+                                      <th scope="col">Status</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>$5,000.00</td>
+                                      <td>Jun 07 2018 - 05:00pm</td>
+                                      <td class="text-primary">Processing</td>
+                                    </tr>
+                                    <tr>
+                                      <td>$10,000.00</td>
+                                      <td>Jun 01 2018 - 10:34pm</td>
+                                      <td class="text-primary">Complete</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -257,8 +380,7 @@
                         <a class="nav-link" id="btcSell-tab" data-toggle="tab" href="#btcSell" role="tab" aria-controls="btcSell" aria-selected="false">SELL</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="btcDeposit-tab" data-toggle="tab" href="#btcDeposit" role="tab" aria-controls="btcDeposit"
-                          aria-selected="false">DEPOSIT</a>
+                        <a class="nav-link" id="btcDeposit-tab" data-toggle="tab" href="#btcDeposit" role="tab" aria-controls="btcDeposit" aria-selected="false">DEPOSIT</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" id="btcWithdrawal-tab" data-toggle="tab" href="#btcWithdrawal" role="tab" aria-controls="btcWithdrawal"
@@ -314,7 +436,7 @@
                             <p class="mb-1">Transactions</p>
                           </div>
                           <div class="card-body p-0">
-                            <table class="table table-sm">
+                            <table class="table table-sm text-center">
                               <thead class="thead-light">
                                 <tr>
                                   <th scope="col">Market</th>
@@ -415,7 +537,7 @@
                             <p class="mb-1">Transactions</p>
                           </div>
                           <div class="card-body p-0">
-                            <table class="table table-sm">
+                            <table class="table table-sm text-center">
                               <thead class="thead-light">
                                 <tr>
                                   <th scope="col">Market</th>
