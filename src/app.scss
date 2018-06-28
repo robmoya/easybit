@@ -128,6 +128,17 @@ hr {
       font-weight: bold;
     }
   }
+  .card {
+    min-height: 800px;
+  }
+  .contact-bar {
+    img {
+      height: 20px;
+    }
+    small {
+      color: #79593d;
+    }
+  }
   .nav-tabs {
     border-bottom: 0;
     display: flex;
@@ -177,7 +188,7 @@ hr {
       }
     }
   }
-  .account-settings__phone-delete {
+  .account-settings__delete {
     button {
       vertical-align: text-bottom;
     }

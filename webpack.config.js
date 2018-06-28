@@ -106,6 +106,12 @@ module.exports = {
       template: './src/log-security-phone.html',
       filename: 'log-security-phone.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Login & Security Edit name',
+      hash: true,
+      template: './src/log-security-name.html',
+      filename: 'log-security-name.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,
