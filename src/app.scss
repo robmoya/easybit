@@ -57,48 +57,107 @@ hr {
   border-radius: 20px;
   margin-bottom: 30px;
   padding: 20px 15px;
-
-  .custom-card__content-left,
-  .custom-card__content-right {
-    display: inline-block;
-  }
-  .custom-card__content-left {
-    div {
-      display: inline-block;
-    }
-    img {
-      height: 40px;
-      vertical-align: initial;
-    }
-    p {
-      margin-bottom: 0;
-    }
-  }
-  .custom-card__content-right {
-    p {
-      display: inline-block;
-      width: 80%;
-    }
-  }
-  .left-arrow {
-    float: right;
-    position: relative;
-    width: 15%;
-    &:after {
-      border-style: solid;
-      border-width: 0.25em 0.25em 0 0;
-      content: '';
-      cursor: pointer;
-      display: inline-block;
-      height: 20px;
-      margin-top: 50%;
-      right: 0;
-      transform: rotate(45deg);
-      vertical-align: top;
-      width: 20px;
+  .amounts {
+    small {
+      margin-right: 80px;
     }
   }
 }
+.custom-card__content-left,
+.custom-card__content-right {
+  display: inline-block;
+}
+.custom-card__content-left {
+  div {
+    display: inline-block;
+  }
+  img {
+    height: 40px;
+    vertical-align: initial;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+.custom-card__content-right {
+  p {
+    display: inline-block;
+    width: 80%;
+  }
+}
+.left-arrow {
+  float: right;
+  position: relative;
+  width: 15%;
+  &:after {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-top: 50%;
+    right: 0;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 20px;
+  }
+}
+
+
+
+//** Cad Wire Transfer **//
+.cad-wire-transfer {
+  ul {
+    padding: 0 20px;
+  }
+  .tab-title {
+    h4,
+    h5 {
+      display: inline-block
+    }
+    h5 {
+      font-weight: 300;
+    }
+    position: relative;
+  }
+  .custom__card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+  }
+  .custom-card__content-right {
+    width: 100%;
+  }
+  .memo {
+    position: relative;
+    .btn {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+  }
+  .redo-arrow {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+
+    img {
+      background: #FFC40F;
+      border-radius: 50%;
+      height: 40px;
+      padding: 5px 5px;
+    }
+
+    small {
+      font-weight: bold;
+      margin-right: 15px;
+    }
+  }
+}
+
 
 //** Transactions page **//
 .transactions {
