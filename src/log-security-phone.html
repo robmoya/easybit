@@ -128,9 +128,9 @@
   <section class="bg-full bg-waves pt-0 pb-5 log-security">
     <div class="container-fluid account-title py-4 mb-3">
       <div class="row">
-        <div class="col-sm-12">
-          <h3 class="text-center mb-4">ACCOUNT OVERVIEW</h3>
-          <ul class="col-sm-8 offset-sm-2 list-unstyled px-0">
+        <div class="col-sm-8 offset-sm-2">
+          <h3 class="text-center mb-4 ">ACCOUNT OVERVIEW</h3>
+          <ul class="list-unstyled px-0">
             <li>
               <small>Account Type:
                 <span class="text-primary">Standard</span>
@@ -152,6 +152,10 @@
               </small>
             </li>
           </ul>
+          <div class="edit">
+            <img src="./images/user.svg" alt="user icon">
+            <small>(edit profile settings)</small>
+          </div>
         </div>
       </div>
     </div>
@@ -164,7 +168,7 @@
                 <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab">
                   <ul class="nav nav-tabs mb-2 pb-3" id="myTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="openOrders-tab" data-toggle="tab" href="#openOrders" role="tab" aria-controls="true" aria-selected="false">
+                      <a class="nav-link" id="openOrders-tab" data-toggle="tab" href="#openOrders" role="tab" aria-controls="true" aria-selected="false">
                         <small class="text-center">
                           Open Ordes
                         </small>
@@ -176,27 +180,27 @@
                       <a class="nav-link" id="prepaid-tab" data-toggle="tab" href="#prepaid" role="tab" aria-controls="false" aria-selected="false">
                         <small class="text-center">Prepaid VISA Card</small>
                         <img src="./images/credit-card.svg" alt="">
-                        <small>Pending Transactions</small>
+                        <small>Prepaid VISA Card Info</small>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="transactionList-tab" data-toggle="tab" href="#transactionList" role="tab" aria-controls="false" aria-selected="false">
                         <small class="text-center">Transactions List</small>
                         <img src="./images/list.svg" alt="">
-                        <small>Pending Transactions</small>
+                        <small>Transaction History</small>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="accountSettings-tab" data-toggle="tab" href="#accountSettings" role="tab" aria-controls="false" aria-selected="false">
+                      <a class="nav-link active" id="accountSettings-tab" data-toggle="tab" href="#accountSettings" role="tab" aria-controls="false" aria-selected="false">
                         <small class="text-center">Account settings & Security</small>
                         <img src="./images/lock-icon.svg" alt="">
-                        <small>Pending Transactions</small>
+                        <small>Language, Time, Profile Info</small>
                       </a>
                     </li>
                   </ul>
 
                   <div class="tab-content pt-4">
-                    <div class="tab-pane active" id="openOrders" role="tabpanel" aria-labelledby="openOrders-tab">
+                    <div class="tab-pane" id="openOrders" role="tabpanel" aria-labelledby="openOrders-tab">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-left align-items-start">
                           <div class="col-sm-12">
@@ -226,7 +230,7 @@
                       </div>
                     </div>
 
-                    <div class="tab-pane" id="accountSettings" role="tabpanel" aria-labelledby="accountSettings-tab">
+                    <div class="tab-pane active" id="accountSettings" role="tabpanel" aria-labelledby="accountSettings-tab">
                       <div class="col-sm-12">
                         <div class="d-flex justify-content-left align-items-start">
                           <div class="col-sm-12">

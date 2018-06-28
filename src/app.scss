@@ -143,7 +143,7 @@ hr {
       }
 
       img {
-        height: 40px;
+        height: 30px;
       }
 
       small:first-child {
@@ -153,7 +153,7 @@ hr {
   }
   .account-title {
     background: #f6f9fa;
-
+    position: relative;
     ul {
       display: flex;
       justify-content: space-between;
@@ -162,6 +162,19 @@ hr {
     li {
       color: #cbcccc;
       flex-basis: auto;
+    }
+    li,
+    .edit {
+      color: #cbcccc;
+    }
+
+    .edit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      img {
+        height: 20px;
+      }
     }
   }
   .account-settings__phone-delete {
