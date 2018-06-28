@@ -77,6 +77,12 @@ module.exports = {
       filename: 'deposit-cad-wire-transfer.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'Desposit Cad Wire Transfer',
+      hash: true,
+      template: './src/deposit-cad-e-transfer.html',
+      filename: 'deposit-cad-e-transfer.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Transactions',
       hash: true,
       template: './src/transactions.html',

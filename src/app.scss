@@ -15,6 +15,14 @@
 //     background-image: url('./images/header-bg.png');
 // }
 
+textarea {
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
 
 .font-spacing {
   letter-spacing: .3em;
@@ -108,8 +116,31 @@ hr {
 
 //** Cad Wire Transfer **//
 .cad-wire-transfer {
+  form {
+    border: 1px solid #444448;
+    margin-bottom: 30px;
+    padding: 20px; 
+  }
   ul {
     padding: 0 20px;
+  }
+  .form-row__amount {
+    img {
+      vertical-align: -webkit-baseline-middle;
+      width: 5%;
+    }
+    input {
+      float: right;
+      width: 95%;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  .form-row__message {
+    small {
+      color: #91908F;
+    }
   }
   .tab-title {
     h4,
