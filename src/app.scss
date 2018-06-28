@@ -44,3 +44,215 @@
 .view {
   min-height: 90vh;
 }
+
+hr {
+  border: 1px solid #444448;
+}
+
+
+//** Custom Card **//
+.custom__card {
+  background: white;
+  border: 1px solid #444448;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+
+  .custom-card__content-left,
+  .custom-card__content-right {
+    display: inline-block;
+  }
+  .custom-card__content-left {
+    div {
+      display: inline-block;
+    }
+    img {
+      height: 40px;
+      vertical-align: initial;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .custom-card__content-right {
+    p {
+      display: inline-block;
+      width: 80%;
+    }
+  }
+  .left-arrow {
+    float: right;
+    position: relative;
+    width: 15%;
+    &:after {
+      border-style: solid;
+      border-width: 0.25em 0.25em 0 0;
+      content: '';
+      cursor: pointer;
+      display: inline-block;
+      height: 20px;
+      margin-top: 50%;
+      right: 0;
+      transform: rotate(45deg);
+      vertical-align: top;
+      width: 20px;
+    }
+  }
+}
+
+//** Transactions page **//
+.transactions {
+  select {
+    background: url(./images/down-chevron.svg) no-repeat right center;
+    background-size: 10px;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    -webkit-appearance: none; /* for webkit browsers */
+    -moz-appearance: none; /* for firefox */
+    appearance: none; /* for modern browsers */
+    outline: 0;
+    width: auto;
+    
+    &::-ms-expand {
+      display:none;
+   }
+  }
+  .btn-export {
+    float: right;
+  }
+  .card-body {
+    min-height: 200px;
+  }
+  .form-control:focus {
+    border: none;
+    border-color: none;
+    box-shadow: none;
+  }
+  .no-results {
+    font-weight: 300;
+  }
+  .select-day {
+    width: 25px;
+  }
+  .select-month {
+    width: 40px;
+  }
+  .select-year {
+    width: 52px;
+  }
+  .select-account__container {
+    p {
+      display: inline-block;
+    }
+  }
+  .select-range__container {
+    border: 1px solid #444448;
+    .select-group__container {
+      float: right;
+    }
+    .select-group {
+      p {
+        display: inline-block;
+      }
+      p,
+      select {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+//** Wallet Page Title **//
+.wallet-title {
+  img {
+    height: 40px;
+    vertical-align: top;
+  }
+  h3 {
+    display: inline-block;
+  }
+}
+
+//** WALLETS: BITCOIN TAB CONTENT **//
+.btc-tabs-content {
+  input {
+    box-shadow: none;
+    font-weight: bold;
+  }
+  .btc-deposit,
+  .btc-withdrawal {
+    small {
+      display: block;
+      line-height: 25px;
+    }
+  }
+  .btc-deposit__disclaimer {
+    color: #c39b6e;
+    &:before {
+      content:"• ";
+    }
+  }
+  .btc-deposit__address-btns {
+    text-align: right;
+  }
+  .btc-notes {
+    ul {
+      padding-left: 20px;
+    }
+  }
+  .btn-qr,
+  .btn-copy {
+    color: #000;
+    height: 37.5px;
+    img {
+      height: 100%;
+      vertical-align: bottom;
+      width: auto;
+    }
+  }
+  .btc-withdrawal {
+    button {
+      color: white;
+      font-weight: 300;
+    }
+    .transaction-fee,
+    .total {
+      p {
+        display: inline-block;
+        width: 120px;
+      }
+      span {
+        float: right;
+        font-weight: bold;
+      }
+    }
+    .transaction-fee {
+      span {
+        color: red;
+      }
+    }
+    .total {
+      p {
+        text-align: right;
+      }
+    }
+  }
+
+  .btc__transactions {
+    min-height: 300px;
+    .card-header {
+      border-left: 0;
+    }
+  }
+}
+
+//** WALLETS: CAD TAB CONTENT **//
+
+
+.cad-tabs-content,
+.transactions {
+  .card-header {
+    border-left: none;
+  }
+}
