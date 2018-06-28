@@ -89,6 +89,12 @@ module.exports = {
       filename: 'transactions.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'Transactions',
+      hash: true,
+      template: './src/transactions-v2.html',
+      filename: 'transactions-v2.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Transactions_No_Results',
       hash: true,
       template: './src/transactions-no-results.html',
