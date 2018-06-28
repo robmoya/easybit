@@ -100,6 +100,12 @@ module.exports = {
       template: './src/transactions-no-results.html',
       filename: 'transactions-no-results.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Login & Security Edit Phone',
+      hash: true,
+      template: './src/log-security-phone.html',
+      filename: 'log-security-phone.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,

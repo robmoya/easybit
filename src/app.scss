@@ -24,6 +24,14 @@ textarea {
   width: 100%;
 }
 
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
 .font-spacing {
   letter-spacing: .3em;
 }
@@ -111,6 +119,70 @@ hr {
     width: 20px;
   }
 }
+
+//** Login & Security **//
+.log-security {
+  form {
+    small {
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .nav-tabs {
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    .nav-link {
+      color: #495057;
+      background: #e3e3e2;
+      border-radius: 10px;
+      height: 89px;
+
+      &.active {
+        background: #c9caca;
+      }
+
+      img {
+        height: 40px;
+      }
+
+      small:first-child {
+       display: block; 
+      }
+    }
+  }
+  .account-title {
+    background: #f6f9fa;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      color: #cbcccc;
+      flex-basis: auto;
+    }
+  }
+  .account-settings__phone-delete {
+    button {
+      vertical-align: text-bottom;
+    }
+    small {
+      display: block;
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }
+  .form-group {
+    display: block;
+  }
+}
+
 
 //** Cad Wire Transfer **//
 .cad-wire-transfer {
@@ -258,12 +330,8 @@ hr {
     }
   }
   .nav {
-    .btn { 
-      color: white;
+    .btn {
       font-weight: bold;
-    }
-    .btn-primary:not([disabled]):not(.disabled).active{
-      color: white;
     }
   }
   .nav-tabs {
