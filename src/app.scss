@@ -15,6 +15,22 @@
 //     background-image: url('./images/header-bg.png');
 // }
 
+textarea {
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: 100%;
+}
+
+.breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
 
 .font-spacing {
   letter-spacing: .3em;
@@ -57,48 +73,216 @@ hr {
   border-radius: 20px;
   margin-bottom: 30px;
   padding: 20px 15px;
-
-  .custom-card__content-left,
-  .custom-card__content-right {
-    display: inline-block;
-  }
-  .custom-card__content-left {
-    div {
-      display: inline-block;
-    }
-    img {
-      height: 40px;
-      vertical-align: initial;
-    }
-    p {
-      margin-bottom: 0;
-    }
-  }
-  .custom-card__content-right {
-    p {
-      display: inline-block;
-      width: 80%;
-    }
-  }
-  .left-arrow {
-    float: right;
-    position: relative;
-    width: 15%;
-    &:after {
-      border-style: solid;
-      border-width: 0.25em 0.25em 0 0;
-      content: '';
-      cursor: pointer;
-      display: inline-block;
-      height: 20px;
-      margin-top: 50%;
-      right: 0;
-      transform: rotate(45deg);
-      vertical-align: top;
-      width: 20px;
+  .amounts {
+    small {
+      margin-right: 80px;
     }
   }
 }
+.custom-card__content-left,
+.custom-card__content-right {
+  display: inline-block;
+}
+.custom-card__content-left {
+  div {
+    display: inline-block;
+  }
+  img {
+    height: 40px;
+    vertical-align: initial;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+.custom-card__content-right {
+  p {
+    display: inline-block;
+    width: 80%;
+  }
+}
+.left-arrow {
+  float: right;
+  position: relative;
+  width: 15%;
+  &:after {
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-top: 50%;
+    right: 0;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 20px;
+  }
+}
+
+//** Login & Security **//
+.log-security {
+  form {
+    small {
+      color: black;
+      font-weight: bold;
+    }
+  }
+  .card {
+    min-height: 800px;
+  }
+  .contact-bar {
+    img {
+      height: 20px;
+    }
+    small {
+      color: #79593d;
+    }
+  }
+  .nav-tabs {
+    border-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    .nav-link {
+      color: #495057;
+      background: #e3e3e2;
+      border-radius: 10px;
+      height: 89px;
+
+      &.active {
+        background: #c9caca;
+      }
+
+      img {
+        height: 30px;
+      }
+
+      small:first-child {
+       display: block; 
+      }
+    }
+  }
+  .account-title {
+    background: #f6f9fa;
+    position: relative;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      color: #cbcccc;
+      flex-basis: auto;
+    }
+    li,
+    .edit {
+      color: #cbcccc;
+    }
+
+    .edit {
+      position: absolute;
+      right: 0;
+      top: 0;
+      img {
+        height: 20px;
+      }
+    }
+  }
+  .account-settings__delete {
+    button {
+      vertical-align: text-bottom;
+    }
+    small {
+      display: block;
+      &:first-child {
+        font-weight: bold;
+      }
+    }
+    .content {
+      display: inline-block;
+    }
+  }
+  .form-group {
+    display: block;
+  }
+}
+
+
+//** Cad Wire Transfer **//
+.cad-wire-transfer {
+  form {
+    border: 1px solid #444448;
+    margin-bottom: 30px;
+    padding: 20px; 
+  }
+  ul {
+    padding: 0 20px;
+  }
+  .form-row__amount {
+    img {
+      vertical-align: -webkit-baseline-middle;
+      width: 5%;
+    }
+    input {
+      float: right;
+      width: 95%;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  .form-row__message {
+    small {
+      color: #91908F;
+    }
+  }
+  .tab-title {
+    h4,
+    h5 {
+      display: inline-block
+    }
+    h5 {
+      font-weight: 300;
+    }
+    position: relative;
+  }
+  .custom__card {
+    background: transparent;
+    border: none;
+    margin-bottom: 0;
+  }
+  .custom-card__content-right {
+    width: 100%;
+  }
+  .memo {
+    position: relative;
+    .btn {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+  }
+  .redo-arrow {
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    top: 50%;
+
+    img {
+      background: #FFC40F;
+      border-radius: 50%;
+      height: 40px;
+      padding: 5px 5px;
+    }
+
+    small {
+      font-weight: bold;
+      margin-right: 15px;
+    }
+  }
+}
+
 
 //** Transactions page **//
 .transactions {
@@ -118,11 +302,18 @@ hr {
       display:none;
    }
   }
+  .bitcoin_logo {
+    height: 40px;
+    margin-left: 5px;
+  }
   .btn-export {
     float: right;
   }
   .card-body {
     min-height: 200px;
+  }
+  .card-header {
+    border: none;
   }
   .form-control:focus {
     border: none;
@@ -160,6 +351,22 @@ hr {
         margin-right: 20px;
       }
     }
+  }
+}
+
+.transactions-tab {
+  .card {
+    .card {
+      box-shadow: none;
+    }
+  }
+  .nav {
+    .btn {
+      font-weight: bold;
+    }
+  }
+  .nav-tabs {
+    border-bottom: 2px solid #444448;
   }
 }
 

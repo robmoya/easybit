@@ -71,16 +71,46 @@ module.exports = {
       filename: 'wallets.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'Desposit Cad Wire Transfer',
+      hash: true,
+      template: './src/deposit-cad-wire-transfer.html',
+      filename: 'deposit-cad-wire-transfer.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Desposit Cad Wire Transfer',
+      hash: true,
+      template: './src/deposit-cad-e-transfer.html',
+      filename: 'deposit-cad-e-transfer.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Transactions',
       hash: true,
       template: './src/transactions.html',
       filename: 'transactions.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'Transactions',
+      hash: true,
+      template: './src/transactions-v2.html',
+      filename: 'transactions-v2.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Transactions_No_Results',
       hash: true,
       template: './src/transactions-no-results.html',
       filename: 'transactions-no-results.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Login & Security Edit Phone',
+      hash: true,
+      template: './src/log-security-phone.html',
+      filename: 'log-security-phone.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Login & Security Edit name',
+      hash: true,
+      template: './src/log-security-name.html',
+      filename: 'log-security-name.html'
     }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
