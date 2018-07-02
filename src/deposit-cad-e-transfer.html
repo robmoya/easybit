@@ -451,15 +451,25 @@
                           </small>
 
                           <form className="py-3">
-                            <div class="form-group">
-                              <p class="mt-4">BTC Withdrawal Address:</p>
-                              <input type="text" class="form-control withdrawal-address" aria-describedby="despositAddressWithdrawal" id="despositAddressWithdrawal">
+                            <div class="form-group row my-3">
+                              <div class="col-sm-12 mb-3">
+                                <div class="col-sm-4 text-right pr-3 form-label">
+                                  <p class="my-0 px-0 ">BTC Withdrawal Address:</p>
+                                </div>
+                                <div class="col-sm-8 px-0 form-input">
+                                  <input type="text" class="form-control withdrawal-address" aria-describedby="despositAddressWithdrawal" id="despositAddressWithdrawal">
+                                </div>
+                              </div>
 
-                              <p class="mt-4">Amount</p>
-                              <div class="input-group">
-                                <input type="text" class="form-control amount" aria-describedby="amount" id="amount">
-                                <div class="input-group-append">
-                                  <span class="input-group-text">BTC</span>
+                              <div class="col-sm-12">
+                                <div class="col-sm-4 text-right pr-3 form-label">
+                                  <p class="my-0">Amount:</p>
+                                </div>
+                                <div class="input-group col-sm-8 px-0 form-input">
+                                  <input type="text" class="form-control amount" aria-describedby="amount" id="amount">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text">BTC</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>

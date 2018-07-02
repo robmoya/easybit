@@ -423,6 +423,12 @@ hr {
       color: white;
       font-weight: 300;
     }
+    // .form-label {
+    //   display: inline-block;
+    // }
+    // .form-input {
+    //   float: right;
+    // }
     .transaction-fee,
     .total {
       p {
@@ -455,11 +461,18 @@ hr {
 }
 
 //** WALLETS: CAD TAB CONTENT **//
-
-
 .cad-tabs-content,
 .transactions {
   .card-header {
     border-left: none;
+  }
+}
+.btc-withdrawal,
+.cad-withdrawal {
+  .form-label {
+    display: inline-block;
+  }
+  .form-input {
+    float: right;
   }
 }
