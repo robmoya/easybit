@@ -207,6 +207,48 @@ hr {
   }
 }
 
+/** Modal Withdrawal **/ 
+.modal-withdrawal {
+  .modal-body {
+    div {
+      border-bottom: 2px dashed #a1a1a1;
+    }
+  }
+  .modal-content {
+    background: #f8f8f8;
+    border-radius: 0;
+    p {
+      color: #636363;
+      display: inline-block;
+      margin: 0;
+      width: auto;
+    }
+    .easybit-logo {
+      img {
+        height: 40px;
+      }
+    }
+    .headline {
+      color: #4791dd;
+      float: right;
+    }
+  }
+  .modal-title {
+    border-bottom: 2px dashed #a1a1a1;
+    p {
+      color: #7b7b7b;
+    }
+    .btn-print {
+      color: #000;
+      float: right;
+      font-weight: 700;
+      img {
+        height: 20px;
+        margin: -3px 0 0 3px;
+      }
+    }
+  }
+}
 
 //** Cad Wire Transfer **//
 .cad-wire-transfer {
