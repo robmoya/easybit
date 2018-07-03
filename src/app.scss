@@ -435,6 +435,43 @@ hr {
     box-shadow: none;
     font-weight: bold;
   }
+  .btc-buy, 
+  .btc-sell {
+    input {
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    }
+    .card {
+      background: none;
+      box-shadow: none;
+      min-height: 400px;
+    }
+    .card-header {
+      h4 {
+        display: inline-block;
+        margin: 0 3px;
+      }
+      .bitcoin-logo__right,
+      .shopping-icon {
+        height: 25px;
+      }
+
+      .bitcoin-logo__right {
+        vertical-align: baseline;
+      }
+      .shopping-icon {
+        vertical-align: inherit;
+      }
+    }
+    .card-header__content-left {
+      display: inline-block;
+    }
+    .card-header__content-right {
+      float: right;
+    }
+    .custom-select {
+      background: white;
+    }
+  }
   .btc-deposit,
   .btc-withdrawal {
     small {
@@ -471,13 +508,6 @@ hr {
       color: white;
       font-weight: 300;
     }
-    // .form-label {
-    //   display: inline-block;
-    // }
-    // .form-input {
-    //   float: right;
-    // }
-    .transaction-fee,
     .total {
       p {
         display: inline-block;
