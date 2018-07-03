@@ -239,7 +239,7 @@
                           </div>
 
                           <hr>
-                          
+
                           <div class="cad-deposit__notes">
                             <p class="mt-4 mb-1">Fund Your Easybit Account</p>
                             <ul class="list-unstyled">
@@ -386,8 +386,111 @@
                     </ul>
 
                     <div class="tab-content btc-tabs-content">
-                      <div class="tab-pane btc-buy active" id="btcBuy" role="tabpanel" aria-labelledby="btcBuy-tab">1 BUY</div>
-                      <div class="tab-pane btc-sell" id="btcSell" role="tabpanel" aria-labelledby="btcSell-tab">2 SELL</div>
+                      <!-- Buy tab -->
+                      <div class="tab-pane btc-buy active" id="btcBuy" role="tabpanel" aria-labelledby="btcBuy-tab">
+                        1 BUY
+                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#buyModal" data-whatever="@mdo">Receipt Popup</button>
+
+                        <div class="modal fade modal-withdrawal" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-title px-3 pt-3 pb-1 mb-4 text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <p class="mb-1 mt-3">YOU ARE WITHDRAWAL</p>
+                                <h4 class="mb-1">1.00000000 BTC</h4>
+                                <p>@ CAD $9001.69 / 1 BTC</p>
+
+                                <div>
+                                  <button class="btn btn-print">
+                                    Print
+                                    <img src="./images/print.svg" alt="print icon">
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="modal-body px-0">
+                                <div class="easybit-logo px-3 pb-2">
+                                  <img src="./images/logo-easybit-black.png" alt="Easybit logo">
+                                </div>
+                                <div class="deposit-detail py-3 px-3">
+                                  <p>Deposit To: </p>
+                                  <p class="headline">9iifj88j9u8ybacon343r</p>
+                                </div>
+                                <div class="amount-detail py-3 px-3">
+                                  <p>Amount Sent: </p>
+                                  <p class="headline">1.00500000</p>
+                                </div>
+                                <div class="processing-detail py-3 px-3">
+                                  <p>Processing Fee: </p>
+                                  <p class="headline">0.005 BTC</p>
+                                </div>
+                                <div class="amount-detail py-3 px-3">
+                                  <p>Total to Receive: </p>
+                                  <p class="headline">1.00000000</p>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-block btn-primary text-white">Confirm Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Selling tab -->
+                      <div class="tab-pane btc-sell" id="btcSell" role="tabpanel" aria-labelledby="btcSell-tab">
+                        2 SELL
+                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#sellModal" data-whatever="@mdo">Receipt Popup</button>
+
+                        <div class="modal fade modal-withdrawal" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-title px-3 pt-3 pb-1 mb-4 text-center">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <p class="mb-1 mt-3">YOU ARE WITHDRAWAL</p>
+                                <h4 class="mb-1">1.00000000 BTC</h4>
+                                <p>@ CAD $9001.69 / 1 BTC</p>
+
+                                <div>
+                                  <button class="btn btn-print">
+                                    Print
+                                    <img src="./images/print.svg" alt="print icon">
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="modal-body px-0">
+                                <div class="easybit-logo px-3 pb-2">
+                                  <img src="./images/logo-easybit-black.png" alt="Easybit logo">
+                                </div>
+                                <div class="deposit-detail py-3 px-3">
+                                  <p>Deposit To: </p>
+                                  <p class="headline">9iifj88j9u8ybacon343r</p>
+                                </div>
+                                <div class="amount-detail py-3 px-3">
+                                  <p>Amount Sent: </p>
+                                  <p class="headline">1.00500000</p>
+                                </div>
+                                <div class="processing-detail py-3 px-3">
+                                  <p>Processing Fee: </p>
+                                  <p class="headline">0.005 BTC</p>
+                                </div>
+                                <div class="amount-detail py-3 px-3">
+                                  <p>Total to Receive: </p>
+                                  <p class="headline">1.00000000</p>
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-lg btn-block btn-primary text-white">Confirm Selling</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                       <!-- btc-desposit tab -->
                       <div class="tab-pane btc-deposit" id="btcDeposit" role="tabpanel" aria-labelledby="btcDeposit-tab">
@@ -484,15 +587,25 @@
                           </small>
 
                           <form className="py-3">
-                            <div class="form-group">
-                              <p class="mt-4">BTC Withdrawal Address:</p>
-                              <input type="text" class="form-control withdrawal-address" aria-describedby="despositAddressWithdrawal" id="despositAddressWithdrawal">
+                            <div class="form-group row my-3">
+                              <div class="col-sm-12 mb-3">
+                                <div class="col-sm-4 text-right pr-3 form-label">
+                                  <p class="my-0 px-0 ">BTC Withdrawal Address:</p>
+                                </div>
+                                <div class="col-sm-8 px-0 form-input">
+                                  <input type="text" class="form-control withdrawal-address" aria-describedby="despositAddressWithdrawal" id="despositAddressWithdrawal">
+                                </div>
+                              </div>
 
-                              <p class="mt-4">Amount</p>
-                              <div class="input-group">
-                                <input type="text" class="form-control amount" aria-describedby="amount" id="amount">
-                                <div class="input-group-append">
-                                  <span class="input-group-text">BTC</span>
+                              <div class="col-sm-12">
+                                <div class="col-sm-4 text-right pr-3 form-label">
+                                  <p class="my-0">Amount:</p>
+                                </div>
+                                <div class="input-group col-sm-8 px-0 form-input">
+                                  <input type="text" class="form-control amount" aria-describedby="amount" id="amount">
+                                  <div class="input-group-append">
+                                    <span class="input-group-text">BTC</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -509,7 +622,7 @@
                           </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block">Withdrawal 1.00000000 BTC</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#btcWhitdrawalModal" data-whatever="@mdo">Withdrawal 1.00000000 BTC</button>
 
                         <div class="btc-notes">
                           <p class="mt-4 mb-1">Please note</p>
@@ -564,6 +677,54 @@
                                 </tr>
                               </tbody>
                             </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- btc-withdrawal confirm popup -->
+                      <div class="modal fade modal-withdrawal" id="btcWhitdrawalModal" tabindex="-1" role="dialog" aria-labelledby="btcWhitdrawalModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-title px-3 pt-3 pb-1 mb-4 text-center">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                              <p class="mb-1 mt-3">YOU ARE WITHDRAWAL</p>
+                              <h4 class="mb-1">1.00000000 BTC</h4>
+                              <p>@ CAD $9001.69 / 1 BTC</p>
+
+                              <div>
+                                <button class="btn btn-print">
+                                  Print
+                                  <img src="./images/print.svg" alt="print icon">
+                                </button>
+                              </div>
+                            </div>
+                            <div class="modal-body px-0">
+                              <div class="easybit-logo px-3 pb-2">
+                                <img src="./images/logo-easybit-black.png" alt="Easybit logo">
+                              </div>
+                              <div class="deposit-detail py-3 px-3">
+                                <p>Deposit To: </p>
+                                <p class="headline">9iifj88j9u8ybacon343r</p>
+                              </div>
+                              <div class="amount-detail py-3 px-3">
+                                <p>Amount Sent: </p>
+                                <p class="headline">1.00500000</p>
+                              </div>
+                              <div class="processing-detail py-3 px-3">
+                                <p>Processing Fee: </p>
+                                <p class="headline">0.005 BTC</p>
+                              </div>
+                              <div class="amount-detail py-3 px-3">
+                                <p>Total to Receive: </p>
+                                <p class="headline">1.00000000</p>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-lg btn-block btn-primary text-white">Confirm Withdrawal</button>
+                            </div>
                           </div>
                         </div>
                       </div>
