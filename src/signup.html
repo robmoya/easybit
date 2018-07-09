@@ -204,7 +204,7 @@
                       <div class="form-row form-row__message">
                         <div class="form-group col-sm-8">
                           <label for="firstName">FIRST NAME</label>
-                          <input type="text" class="form-control" id="inputPassword" placeholder="">
+                          <input type="text" class="form-control" id="firstName" placeholder="">
                         </div>
                         <div class="form-group col-sm-4">
                           <label for="middleInitial">MIDDLE INITIAL</label>
@@ -271,20 +271,28 @@
                       </div>
 
                       <div class="form-row form-row__message">
-                          <div class="form-group col-sm-6">
-                            <label for="issueDate">ISSUED DATE</label>
-                            <input type="text" class="form-control" id="issueDate" placeholder="">
-                          </div>
-                          <div class="form-group col-sm-6">
-                            <label for="expirationDate">EXPIRATION DATE</label>
-                            <input type="text" class="form-control" id="expirationDate" placeholder="">
-                          </div>
+                        <div class="form-group col-sm-6">
+                          <label for="issueDate">ISSUED DATE</label>
+                          <input type="text" class="form-control" id="issueDate" placeholder="">
                         </div>
+                        <div class="form-group col-sm-6">
+                          <label for="expirationDate">EXPIRATION DATE</label>
+                          <input type="text" class="form-control" id="expirationDate" placeholder="">
+                        </div>
+                      </div>
 
                       <div class="row">
                         <div class="form-group col-sm-12">
-                          <label for="uploadImage">UPLOAD IMAGE</label>
-                          <input type="file" name="uploadImage" accept="image/*">
+                          <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected"
+                            multiple onchange="loadFile(event)" />
+                          <label for="file-1">
+                            <span>Choose file</span>
+                          </label>
+
+                          <div class="img-preview">
+                            <h4 id="titlePreview">NO IMAGE SELECTED</h4/>
+                              <img id="output" />
+                          </div>
                         </div>
                       </div>
 
@@ -412,6 +420,14 @@
 
 
   <script src='app.bundle.js'></script>
+  <script>
+    var loadFile = function (event) {
+      var output = document.getElementById('output');
+      var title = document.getElementById('titlePreview');
+      output.src = URL.createObjectURL(event.target.files[0]);
+      title.style.display = 'none';
+    };
+  </script>
 </body>
 
 </html>
