@@ -388,18 +388,53 @@
                     <div class="tab-content btc-tabs-content">
                       <!-- Buy tab -->
                       <div class="tab-pane btc-buy active" id="btcBuy" role="tabpanel" aria-labelledby="btcBuy-tab">
-                        1 BUY
-                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#buyModal" data-whatever="@mdo">Receipt Popup</button>
+                        <div class="card btc__transactions">
+                          <div class="card-header mb-">
+                            <div class="card-header__content-left">
+                              <img class="shopping-icon" src="./images/shopping-basket.svg" alt="shopping basket icon">
+                              <h4 class="mb-1">BUY Bitcoin</h4>
+                              <img class="bitcoin-logo__right" src="./images/bitcoin_logo_right.png" alt="bitcoin logo">
+                            </div>
 
-                        <div class="modal fade modal-withdrawal" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel"
-                          aria-hidden="true">
+                            <div class="card-header__content-right">
+                              <h5>CAD $6570.73/ 1 BTC</h5>
+                            </div>
+                          </div>
+                          <div class="card-body p-0">
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                  <label for="product">SELECT PRODUCT</label>
+                                  <select name="product" class="select-product custom-select">
+                                    <option value="BITCOIN BTC">BITCOIN (BTC)</option>
+                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                  <label for="cadAMount">CAD AMOUNT</label>
+                                  <input type="number" name="cadAmount" class="form-control" placeholder="">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                  <label for="btcAmount">BTC AMOUNT</label>
+                                  <input type="number" name="btcAmount" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#buyModal" data-whatever="@mdo">PURCHASE 0.14157217</button>
+
+                        <div class="modal fade modal-withdrawal" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-title px-3 pt-3 pb-1 mb-4 text-center">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                                <p class="mb-1 mt-3">YOU ARE WITHDRAWAL</p>
+                                <p class="mb-1 mt-3">YOU ARE BUYING</p>
                                 <h4 class="mb-1">1.00000000 BTC</h4>
                                 <p>@ CAD $9001.69 / 1 BTC</p>
 
@@ -424,11 +459,11 @@
                                 </div>
                                 <div class="processing-detail py-3 px-3">
                                   <p>Processing Fee: </p>
-                                  <p class="headline">0.005 BTC</p>
+                                  <p class="headline">5% BTC</p>
                                 </div>
                                 <div class="amount-detail py-3 px-3">
-                                  <p>Total to Receive: </p>
-                                  <p class="headline">1.00000000</p>
+                                  <p>Total To Receive: </p>
+                                  <p class="headline">0.14157217</p>
                                 </div>
                               </div>
                               <div class="modal-footer">
@@ -441,18 +476,53 @@
 
                       <!-- Selling tab -->
                       <div class="tab-pane btc-sell" id="btcSell" role="tabpanel" aria-labelledby="btcSell-tab">
-                        2 SELL
-                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#sellModal" data-whatever="@mdo">Receipt Popup</button>
+                        <div class="card btc__transactions">
+                          <div class="card-header mb-">
+                            <div class="card-header__content-left">
+                              <img class="shopping-icon" src="./images/shopping-basket.svg" alt="shopping basket icon">
+                              <h4 class="mb-1">SELL Bitcoin</h4>
+                              <img class="bitcoin-logo__right" src="./images/bitcoin_logo_right.png" alt="bitcoin logo">
+                            </div>
 
-                        <div class="modal fade modal-withdrawal" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel"
-                          aria-hidden="true">
+                            <div class="card-header__content-right">
+                              <h5>CAD $6570.73/ 1 BTC</h5>
+                            </div>
+                          </div>
+                          <div class="card-body p-0">
+                            <form>
+                              <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                  <label for="product">SELECT PRODUCT</label>
+                                  <select name="product" class="select-product custom-select">
+                                    <option value="BITCOIN BTC">BITCOIN (BTC)</option>
+                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                  <label for="cadAMount">CAD AMOUNT</label>
+                                  <input type="number" name="cadAmount" class="form-control" placeholder="">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                  <label for="btcAmount">BTC AMOUNT</label>
+                                  <input type="number" name="btcAmount" class="form-control" placeholder="">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block text-white" data-toggle="modal" data-target="#sellModal" data-whatever="@mdo">SELL 0.14157217</button>
+
+                        <div class="modal fade modal-withdrawal" id="sellModal" tabindex="-1" role="dialog" aria-labelledby="sellModalLabel" aria-hidden="true">
                           <div class="modal-dialog" role="document">
                             <div class="modal-content">
                               <div class="modal-title px-3 pt-3 pb-1 mb-4 text-center">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                                <p class="mb-1 mt-3">YOU ARE WITHDRAWAL</p>
+                                <p class="mb-1 mt-3">YOU ARE SELLING</p>
                                 <h4 class="mb-1">1.00000000 BTC</h4>
                                 <p>@ CAD $9001.69 / 1 BTC</p>
 
@@ -473,15 +543,15 @@
                                 </div>
                                 <div class="amount-detail py-3 px-3">
                                   <p>Amount Sent: </p>
-                                  <p class="headline">1.00500000</p>
+                                  <p class="headline">$1000</p>
                                 </div>
                                 <div class="processing-detail py-3 px-3">
                                   <p>Processing Fee: </p>
-                                  <p class="headline">0.005 BTC</p>
+                                  <p class="headline">5% BTC</p>
                                 </div>
                                 <div class="amount-detail py-3 px-3">
-                                  <p>Total to Receive: </p>
-                                  <p class="headline">1.00000000</p>
+                                  <p>Total To Receive: </p>
+                                  <p class="headline">0.14157217</p>
                                 </div>
                               </div>
                               <div class="modal-footer">
@@ -622,7 +692,7 @@
                           </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#btcWhitdrawalModal" data-whatever="@mdo">Withdrawal 1.00000000 BTC</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#btcWhitdrawalModal" data-whatever="@mdo">WITHDRAWAL 1.00000000 BTC</button>
 
                         <div class="btc-notes">
                           <p class="mt-4 mb-1">Please note</p>
