@@ -24,6 +24,10 @@ textarea {
   width: 100%;
 }
 
+select {
+  background: none !important;
+}
+
 .breadcrumb {
   background: transparent;
 }
@@ -552,5 +556,68 @@ hr {
   }
   .form-input {
     float: right;
+  }
+}
+
+//** UPLOAD INPUT FILE **//
+.inputfile + label {
+  border-radius: 5px;
+  font-size: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+}
+
+.inputfile{
+  display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em;
+}
+
+.inputfile-1 + label {
+  color: #000;
+  background-color: #FFC40F;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: #e8af00;
+}
+
+.img-preview {
+  border: 1px solid #444448;
+  border-radius: 5px;
+  height: 300px;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: relative;
+
+  h5,
+  img {
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    position: absolute;
+  }
+  img {
+    height: auto;
+    width: 100%;
   }
 }
