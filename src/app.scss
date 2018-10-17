@@ -886,4 +886,10 @@ hr {
   .btn-balance__withdraw {
     background-image: url(./images/btn-balance-withdraw.png);
   }
+  .modal {
+    .custom-select {
+      background-color: #ededed !important;
+      box-shadow: none !important;
+    }
+  }
 }
