@@ -66,6 +66,26 @@ select {
   background-repeat: repeat;
   background-attachment: fixed;
 }
+.bg-pattern__slider {
+  background-image: url('./images/slider-background.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.bg-computer-gray {
+  background-image: url('./images/section-news.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg-computer-gray__overlay {
+  position: absolute;
+  background: rgba(255,255,255,.7);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
 .view {
   min-height: 90vh;
 }
@@ -701,5 +721,140 @@ hr {
   img {
     height: auto;
     width: 100%;
+  }
+}
+
+// ** New design homepage ** //
+.homepage {
+  small {
+    color: #595959;
+  }
+  .btc-icon {
+    background-image: url(./images/BTC.png);
+  }
+  .ltc-icon {
+    background-image: url(./images/LTC.png);
+  }
+  .btc-icon,
+  .ltc-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 24px;
+    vertical-align: bottom;
+    width:  24px; 
+  }
+  
+  .balance-group {
+    display: inline-flex;
+    .text-green {
+      color: #39b54a
+    }
+    .text-red {
+      color: #ed1c24
+    }
+  }
+
+  // Carousel slider
+  .carousel-desktop {
+    display: none;
+  }
+  .carousel-item__btn {
+    border-radius: 30px;
+    padding: 10px 1rem !important;
+  }
+  .carousel-item__description {
+    line-height: 32px;
+  }
+  .carousel-item__image {
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 120px;
+  }
+  .carousel-item__image-1 {
+    background-image: url(./images/header-img.png);
+    position: relative;
+  
+    span {
+      bottom: 10px;
+      opacity: 0.5;
+      position: absolute;
+      right: 10px;
+    }
+  }
+  .carousel-item__image-2 {
+    background-image: url(./images/graphicstock.png);
+  }
+  .carousel-item__image-3 {
+    background-image: url(./images/prepaid-visa.png);
+  }
+  .carousel-item__second {
+    h2,
+    h5 {
+      color: $blue-secondary;
+    }
+  }
+  
+  .btn-background {
+    background-image: url(./images/graphicstock-btn.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  // Get Started
+  .bg-waves--started {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .bg-warning__description {
+    display: block;
+    margin: 20px 0;
+  }
+  
+  // Section
+  .services,
+  .get-started {
+    h5 {
+      color: $dark;
+    }
+  }
+
+  // Footer 
+  footer .search {
+    position: relative;
+  }
+  footer .search-action {
+    background: $primary;
+    border-radius: 0 4px 4px 0;
+    padding: 17px 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .carousel-mobile {
+      display: none;
+    }
+    .carousel-desktop {
+      display: block;
+    }
+    .carousel-item__image {
+      height: 450px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .bg-warning__description {
+      display: inline-block;
+    }
+    .carousel-item__image {
+      height: 500px;
+    }
   }
 }
