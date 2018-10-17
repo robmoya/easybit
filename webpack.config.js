@@ -65,6 +65,12 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'HomepageNew',
+      hash: true,
+      template: './src/homepagenew.html',
+      filename: 'homepagenew.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Wallets',
       hash: true,
       template: './src/wallets.html',
