@@ -893,7 +893,11 @@ hr {
   .btn-balance__withdraw {
     background-image: url(./images/btn-balance-withdraw.png);
   }
-
+  .icon-download {
+    background-image: url(./images/icon-download.png);
+    background-position: center;
+    background-size: cover;
+  }
   .modal {
     .modal-dialog {
       max-width: 650px;
@@ -916,6 +920,46 @@ hr {
   }
 
   .recent-transactions {
+    &__search-group {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .search {
+        display: inline-block;
+        position: relative;
+
+        input {
+          border: none !important;
+          box-shadow: none;
+          width: 145px;
+        }
+      }
+      .search-action {
+        background: transparent;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        padding: 4px 6px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+          height: 22px;
+        }
+      }
+    }
+
+    .btn-download {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      img {
+        height: 23px;
+        width: auto;
+      }
+    }
     .nav-tabs {
       .nav-link {
         border: 1px solid $darkSecondary;
@@ -934,6 +978,17 @@ hr {
           border-bottom: 1px solid $white;
         }
       }
+    }
+    th {
+      background-color: transparent;
+    }
+    td {
+      color: #464443;
+      border-color: #e4dad3 !important;
+    }
+
+    .tab-pane {
+      position: relative;
     }
   }
 
