@@ -921,19 +921,15 @@ hr {
 
   .recent-transactions {
     &__search-group {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-
       .search {
         display: inline-block;
         position: relative;
+        margin-top: 20px;
+        width: 80%;
 
         input {
           border: none !important;
           box-shadow: none;
-          width: 145px;
         }
       }
       .search-action {
@@ -995,66 +991,64 @@ hr {
       width: 100%; 
       border-collapse: collapse; 
     }
+  }
 
-    @media only screen and (max-width: 760px),
-    (min-device-width: 768px) and (max-device-width: 1024px)  {
+  @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
 
-      /* Force table to not be like tables anymore */
-      table, thead, tbody, th, td, tr { 
-        display: block; 
-      }
-      
-      /* Hide table headers (but not display: none;, for accessibility) */
-      thead tr { 
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%; 
+    }
 
-      td { 
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%; 
-      }
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+    }
 
-      td:before { 
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 45%; 
-        padding-right: 10px; 
-        white-space: nowrap;
-      }
+    /* Zebra striping */
+    tr:nth-of-type(odd) { 
+      background: #eee; 
+    }
 
-      /*
-        Label the data
-      */
-      .table--all {
-        td:nth-of-type(1):before { content: "Date"; }
-        td:nth-of-type(2):before { content: "Transaction"; }
-        td:nth-of-type(3):before { content: "Currency"; }
-        td:nth-of-type(4):before { content: "Description"; }
-        td:nth-of-type(5):before { content: "Amount"; }
-        td:nth-of-type(6):before { content: "Status"; }
-      }
+    /*
+      Label the data
+    */
+    .table--all {
+      td:nth-of-type(1):before { content: "Date"; }
+      td:nth-of-type(2):before { content: "Transaction"; }
+      td:nth-of-type(3):before { content: "Currency"; }
+      td:nth-of-type(4):before { content: "Description"; }
+      td:nth-of-type(5):before { content: "Amount"; }
+      td:nth-of-type(6):before { content: "Status"; }
+    }
 
-      .table--deposit, 
-      .table--withdrawal {
-        td:nth-of-type(1):before { content: "Date"; }
-        td:nth-of-type(2):before { content: "Currency"; }
-        td:nth-of-type(3):before { content: "Description"; }
-        td:nth-of-type(4):before { content: "Amount"; }
-        td:nth-of-type(5):before { content: "Status"; }
-      }
-
-      /* Zebra striping */
-      tr:nth-of-type(odd) { 
-        background: #eee; 
-      }
+    .table--deposit, 
+    .table--withdrawal {
+      td:nth-of-type(1):before { content: "Date"; }
+      td:nth-of-type(2):before { content: "Currency"; }
+      td:nth-of-type(3):before { content: "Description"; }
+      td:nth-of-type(4):before { content: "Amount"; }
+      td:nth-of-type(5):before { content: "Status"; }
     }
   }
 
@@ -1065,10 +1059,27 @@ hr {
   }
 
   @media screen and (min-width: 768px) {
+    .recent-transactions {
+      &__search-group {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+  
+        .search {
+          margin-top: 0;
+          width: initial;
+          input {
+            width: 160px;
+          }
+        }
+      }
+    }
     .modal {
       .modal-dialog {
         max-width: 600px;
       }
     }
   }
+  
 }
