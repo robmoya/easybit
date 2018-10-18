@@ -97,6 +97,9 @@ select {
   background-color: #ededed !important;
   box-shadow: none !important;
 }
+.bg-darkSecondary {
+  background-color: $darkSecondary !important;
+}
 .view {
   min-height: 90vh;
 }
@@ -738,7 +741,7 @@ hr {
 .homepage,
 .funds {
   small {
-    color: #595959;
+    color: $small-gray;
   }
   .btc-icon {
     background-image: url(./images/BTC.png);
@@ -760,10 +763,10 @@ hr {
   .balance-group {
     display: inline-flex;
     .text-green {
-      color: #39b54a
+      color: $green-icon;
     }
     .text-red {
-      color: #ed1c24
+      color: $danger
     }
   }
 
@@ -891,9 +894,60 @@ hr {
     background-image: url(./images/btn-balance-withdraw.png);
   }
 
+  .modal {
+    .modal-dialog {
+      max-width: 650px;
+    }
+    .close {
+      width: 100%;
+    }
+  }
+
   .disclaimer {
     small {
-      color: red;
+      color: $danger;
+    }
+  }
+
+  .qr-code {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .recent-transactions {
+    .nav-tabs {
+      .nav-link {
+        border: 1px solid $darkSecondary;
+        color: black;
+        &.active {
+          background: none;
+          border: none;
+          border: 1px solid $darkSecondary;
+          border-bottom: 1px solid $white;
+        }
+        &:hover {
+          border: none;
+          border-top-left-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+          border: 1px solid $darkSecondary;
+          border-bottom: 1px solid $white;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    .multisig-address {
+      width: 365px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .modal {
+      .modal-dialog {
+        max-width: 600px;
+      }
     }
   }
 }
