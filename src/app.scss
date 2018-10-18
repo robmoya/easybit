@@ -93,6 +93,10 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bg-gray {
+  background-color: #ededed !important;
+  box-shadow: none !important;
+}
 .view {
   min-height: 90vh;
 }
@@ -886,10 +890,10 @@ hr {
   .btn-balance__withdraw {
     background-image: url(./images/btn-balance-withdraw.png);
   }
-  .modal {
-    .custom-select {
-      background-color: #ededed !important;
-      box-shadow: none !important;
+
+  .disclaimer {
+    small {
+      color: red;
     }
   }
 }

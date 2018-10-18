@@ -155,12 +155,11 @@
                                         aria-labelledby="abFiatDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header border-0 text-center">
-                                                    <h6 class="modal-title" id="exampleModalLongTitle">Deposit
-                                                        USD$/CAD$</h6>
+                                                <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
+                                                    <h6 class="modal-title" id="exampleModalLongTitle">Deposit USD$/CAD$</h6>
                                                 </div>
                                                 <div class="modal-body">
                                                     <p>Select Deposit Type</p>
@@ -168,7 +167,7 @@
                                                     <form>
                                                         <div class="form-row">
                                                             <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select">
+                                                                <select name="product" class="custom-select bg-gray">
                                                                     <option value="BITCOIN BTC">Bank Wire Transfer
                                                                         (SUD$ or CAD$)</option>
                                                                     <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
@@ -203,7 +202,7 @@
                                                     <p class="mb-0">$ 100,000.00</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
-                                                    data-toggle="modal" data-target="#abBitcoinDeposit">
+                                                        data-toggle="modal" data-target="#abBitcoinDeposit">
                                                         <a href="#" class="text-white">Deposit</a>
                                                     </button>
                                                 </div>
@@ -223,30 +222,29 @@
                                         aria-labelledby="abBitcoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header border-0 text-center">
-                                                    <h6 class="modal-title" id="exampleModalLongTitle">Deposit
-                                                        USD$/CAD$</h6>
+                                                <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/BTC-medium.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT BITCOIN</h6>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Select Deposit Type</p>
-
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select">
-                                                                    <option value="BITCOIN BTC">Bank Wire Transfer
-                                                                        (SUD$ or CAD$)</option>
-                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
-                                                                </select>
-                                                            </div>
+                                                    <p>Send your Bitcoins to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-label="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,7 +269,7 @@
                                                     <p class="mb-0">$ 100,000.00</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
-                                                    data-toggle="modal" data-target="#abBitcoinCashDeposit">
+                                                        data-toggle="modal" data-target="#abBitcoinCashDeposit">
                                                         <a href="#" class="text-white">Deposit</a>
                                                     </button>
                                                 </div>
@@ -291,30 +289,35 @@
                                         aria-labelledby="abBitcoinCashDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header border-0 text-center">
-                                                    <h6 class="modal-title" id="exampleModalLongTitle">Deposit
-                                                        USD$/CAD$</h6>
+                                                <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/BTC-medium-left.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT BITCOIN CASH</h6>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Select Deposit Type</p>
-
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select">
-                                                                    <option value="BITCOIN BTC">Bank Wire Transfer
-                                                                        (SUD$ or CAD$)</option>
-                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
-                                                                </select>
-                                                            </div>
+                                                    <p>Send your Bitcoin Cash (BHC) to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="3FkHU2kFwUJ4cZoawi8YsBaz5JbrgYEgjs"
+                                                            aria-label="3FkHU2kFwUJ4cZoawi8YsBaz5JbrgYEgjs"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
+                                                    <div class="disclaimer text-red pb-2">
+                                                        <small>
+                                                            Note: Only Bitcoin Cash (BHC) may be sent to the wallet address above. Deposits of any other cryptocurrency will not
+                                                            get credited to your account.
+                                                        </small>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -339,7 +342,7 @@
                                                     <p class="mb-0">$ 100,000.00</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
-                                                    data-toggle="modal" data-target="#abLitecoinDeposit">
+                                                        data-toggle="modal" data-target="#abLitecoinDeposit">
                                                         <a href="#" class="text-white">Deposit</a>
                                                     </button>
                                                 </div>
@@ -359,7 +362,7 @@
                                         aria-labelledby="abLitecoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header border-0 text-center">
+                                                <div class="modal-header border-0 text-center d-block">
                                                     <h6 class="modal-title" id="exampleModalLongTitle">Deposit
                                                         USD$/CAD$</h6>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -367,22 +370,19 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Select Deposit Type</p>
-
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select">
-                                                                    <option value="BITCOIN BTC">Bank Wire Transfer
-                                                                        (SUD$ or CAD$)</option>
-                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
-                                                                </select>
-                                                            </div>
+                                                    <p>Send your Bitcoins to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-label="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
                                                         </div>
-                                                    </form>
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
