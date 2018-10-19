@@ -124,6 +124,12 @@ module.exports = {
       template: './src/contact.html',
       filename: 'contact.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Funds',
+      hash: true,
+      template: './src/funds.html',
+      filename: 'funds.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,

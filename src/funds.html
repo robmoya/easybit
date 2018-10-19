@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easybit Homepage</title>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+</head>
+
+<body class="funds">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo-easybit.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index-new.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TRADE</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./funds.html">FUNDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html"><i class="fa fa-user"></i>PROFILE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tickers -->
+    <div class="bg-dark mt-5 pt-5">
+        <div class="container">
+            <div class="row pb-1">
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="d-flex flex-column">
+                        <div class="balance-group">
+                            <span class="btc-icon"></span>
+                            <small>
+                                <span class="text-white ml-1">Bitcoin</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-green">Buy:</span>
+                                <span class="text-white">$7,000.00</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-red">Sell:</span>
+                                <span class="text-white">$ 6,575,00</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="ltc-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Litecoin</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$68.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$55.00</span>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="btc-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Bitcoin Cash</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$535.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$502.00</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Balances -->
+    <section class="bg-northPole py-5 services">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col text-center">
+
+                    <span class="text-muted">Wallets</span>
+                    <h2 class="font-spacing mt-3">Account Balances</h2>
+                    <div class="mt-4 mb-5"></div>
+
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-top">
+                                    <div class="card col-sm-12 px-0">
+                                        <div class="card-header border-0 py-2 py-md-4 text-center">
+                                            <div class="container-fluid px-2">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <img src="./images/$USD.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <h4 class="font-weight-normal my-0">FIAT</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 text-center mb-4">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDeposit">
+                                                        <a href="#" class="text-white">Deposit</a>
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6 text-center">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw" ype="button"
+                                                        data-toggle="modal" data-target="#abFiatWiredraw">
+                                                        <a href="#" class="text-white">Withdraw</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Deposit STEP-1-->
+                                    <div class="modal fade" id="abFiatDeposit" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                        USD$/CAD$</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Select Deposit Type</p>
+
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <select name="product" class="custom-select bg-gray">
+                                                                    <option value="BITCOIN BTC">Interac Email Transfer
+                                                                        (CAD$ Only)</option>
+                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep2"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Deposit STEP-2-->
+                                    <div class="modal fade" id="abFiatDepositStep2" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                        USD$/CAD$</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
+                                                    <form class="col-xl-8 pl-0">
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <select name="product" class="custom-select bg-gray">
+                                                                    <option value="BITCOIN BTC">Interac Email Transfer
+                                                                        (CAD$ Only)</option>
+                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
+                                                    <div class="input-group col-xl-8 mb-3 pl-0">
+                                                        <input type="text" class="form-control bg-gray text-right" placeholder="$ 1,000.00"
+                                                            aria-label="$ 1,000.00">
+                                                    </div>
+                                                    
+                                                    <p class="mb-1">Terms and conditions</p>
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small>1. Allow 1-3 days processing time.</small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    2. Funding fee is 2.5%. This will be applied to the total amount received. The 
+                                                                    amount net of fees will be credited to your fund balance.
+                                                                </small> 
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    3. To fund your account using Interac e-Transfer, log into your Canadian financial 
+                                                                    institution's online banking and initiate the transfer using the parameters set
+                                                                    when you click on CONTINUE. Use copy and paste to ensure accuracy. Failing 
+                                                                    to enter the correct message and secret answer in your transfer may result in 
+                                                                    a longer wait time or a rejected transaction.
+                                                                </small> 
+                                                            </li>
+                                                        </ol>
+                                                        <div class="my-2">
+                                                            <input type="checkbox" name="termsAndconditions" value=""><small>I agree with terms and conditions</small>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep3"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--MODAL Account Balance FIAT Deposit STEP-3-->
+                                    <div class="modal fade" id="abFiatDepositStep3" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep3Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">
+                                                        Interac email transfer request submitted
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Use the details below when sending the email transfer:</p>
+                                                    <div class="col-md-8 offset-md-2 px-0">
+                                                        <p class="mb-1">E-Transfer payable to:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="Easybit"
+                                                                aria-label="Easybit"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Send e-transfer to:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="email" class="form-control bg-gray" placeholder="etransfers@easybit.ca"
+                                                                aria-label="etransfers@easybit.ca"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Password for email transfer</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="PASSWORD0123456789"
+                                                                aria-label="PASSWORD0123456789"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Message details:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="MESSAGE0123456789"
+                                                                aria-label="MESSAGE0123456789"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep4"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Deposit STEP-4-->
+                                    <div class="modal fade" id="abFiatDepositStep4" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep4Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">
+                                                        Interac email transfer request submitted
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="py-2 px-md-4 text-justify">
+                                                        Deposit request received. This amount will show up in your wallet 
+                                                        balance but will not be withdrawable until the deposit has been 
+                                                        received and processed. Allow 1-3 days processing time.
+                                                    </p>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button" data-dismiss="modal" aria-label="Close">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Wiretransfer -->
+                                    <div class="modal fade" id="abFiatWiredraw" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatWiredrawTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                        USD$/CAD$</h6>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Select Deposit Type</p>
+
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <select name="product" class="custom-select bg-gray">
+                                                                    <option value="BITCOIN BTC">Bank Wire Transfer
+                                                                        (SUD$ or CAD$)</option>
+                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-top">
+                                    <div class="card col-sm-12 px-0">
+                                        <div class="card-header border-0 py-2 py-md-4 text-center">
+                                            <div class="container-fluid px-2">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <img src="./images/BTC-medium.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <h4 class="font-weight-normal my-0">BITCOIN</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 text-center mb-4">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
+                                                        data-toggle="modal" data-target="#abBitcoinDeposit">
+                                                        <a href="#" class="text-white">Deposit</a>
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6 text-center">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw">
+                                                        <a href="#" class="text-white">Withdraw</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL Account Balance BITCOIN Deposit -->
+                                    <div class="modal fade" id="abBitcoinDeposit" tabindex="-1" role="dialog"
+                                        aria-labelledby="abBitcoinDepositTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/BTC-medium.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                            BITCOIN</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Send your Bitcoins to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-label="3FrKHGeN2aUh6XpMUiepprfbiJLXpTSi7E"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-right--top">
+                                    <div class="card col-sm-12 px-0">
+                                        <div class="card-header border-0 py-2 py-md-4 text-center">
+                                            <div class="container-fluid px-2">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <img src="./images/BTC-medium-left.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <h4 class="font-weight-normal my-0">BITCOIN CASH</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 text-center mb-4">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
+                                                        data-toggle="modal" data-target="#abBitcoinCashDeposit">
+                                                        <a href="#" class="text-white">Deposit</a>
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6 text-center">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw">
+                                                        <a href="#" class="text-white">Withdraw</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL Account Balance BITCOIN CASH Deposit -->
+                                    <div class="modal fade" id="abBitcoinCashDeposit" tabindex="-1" role="dialog"
+                                        aria-labelledby="abBitcoinCashDepositTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/BTC-medium-left.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                            BITCOIN CASH</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Send your Bitcoin Cash (BHC) to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="3FkHU2kFwUJ4cZoawi8YsBaz5JbrgYEgjs"
+                                                            aria-label="3FkHU2kFwUJ4cZoawi8YsBaz5JbrgYEgjs"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
+                                                    <div class="disclaimer text-red pb-2">
+                                                        <small>
+                                                            Note: Only Bitcoin Cash (BHC) may be sent to the wallet
+                                                            address above. Deposits of any other cryptocurrency will
+                                                            not
+                                                            get credited to your account.
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-right--bottom">
+                                    <div class="card col-sm-12 px-0">
+                                        <div class="card-header border-0 py-2 py-md-4 text-center">
+                                            <div class="container-fluid px-2">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <img src="./images/LTC-medium.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <h4 class="font-weight-normal my-0">LITECOIN</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                            <div class="row">
+                                                <div class="col-sm-6 text-center mb-4">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
+                                                        data-toggle="modal" data-target="#abLitecoinDeposit">
+                                                        <a href="#" class="text-white">Deposit</a>
+                                                    </button>
+                                                </div>
+                                                <div class="col-sm-6 text-center">
+                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <small class="mb-2 mb-md-4 d-block">Total Balance</small>
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw">
+                                                        <a href="#" class="text-white">Withdraw</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL Account Balance LITECOIN Deposit -->
+                                    <div class="modal fade" id="abLitecoinDeposit" tabindex="-1" role="dialog"
+                                        aria-labelledby="abLitecoinDepositTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/LTC-medium.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                            LITECOIN</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Send your Litecoins (LTC) to this address</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control bg-gray" placeholder="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
+                                                            aria-label="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
+                                                            aria-describedby="copyButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                type="button" id="copyButton">Copy</button>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        If your wallet does not support sending to new M* LTC Multsig
+                                                        addresses click
+                                                        <span class="highlight">here</span> to get o get your
+                                                        compatible LTC Multisig address starting with 3*.
+                                                    </p>
+                                                    <p class="mb-0">Send your Litecoin (LTC) to this Multisig address:</p>
+                                                    <div class="input-group multisig-address mb-3">
+                                                        <input type="text" class="form-control border-1" placeholder="3CXL2jyXDx9u8gWhas82P6JKbQCDbvFaqz"
+                                                            aria-label="3CXL2jyXDx9u8gWhas82P6JKbQCDbvFaqz"
+                                                            aria-describedby="copyButton">
+                                                    </div>
+                                                    <div class="qr-code text-center">
+                                                        <img src="./images/qr.png" alt="">
+                                                    </div>
+                                                    <div class="disclaimer text-red pb-2">
+                                                        <small>
+                                                            Note: Only Litecoin (LTC) may be sent to the wallet address
+                                                            above.
+                                                            Deposits of any other cryptocurrency will not get credited
+                                                            to your account.
+                                                        </small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent transactions -->
+    <section class="py-5 mb-5 recent-transactions">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <span class="text-muted">History</span>
+                    <h2 class="font-spacing mt-3">Recent Transactions</h2>
+                    <img src="./images/icon-divider.png" alt="" class="mt-4 mb-5">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-darkSecondary py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 offset-md-1 p-0">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab">
+                                <ul class="nav nav-tabs border-0 mb-0" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                                            aria-controls="false" aria-selected="true">
+                                            ALL
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link show" id="cadDeposit-tab" data-toggle="tab" href="#cadDeposit"
+                                            role="tab" aria-controls="false" aria-selected="true">
+                                            DEPOSIT
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="cadWithdrawal-tab" data-toggle="tab" href="#cadWithdrawal"
+                                            role="tab" aria-controls="false" aria-selected="false">
+                                            WITHDRAWAL
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="recent-transactions__search-group">
+                                    <button class="btn-download">
+                                        <img src="./images/icon-download.png" alt="">
+                                    </button>
+                                    <div class="search">
+                                        <input type="text" class="form-control border-0 py-2" placeholder="" value="">
+                                        <span class="search-action">
+                                            <img src="./images/icon-search.png" alt="">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class=" col-sm-12 col-xl-10 offset-xl-1 p-0">
+                                <!-- <div class="tab-content" id="v-pills-tabContent"> -->
+                                <!-- <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab"> -->
+                                <div class="tab-content cad-tabs-content">
+                                    <!-- ALL tab -->
+                                    <div class="tab-pane cad-deposit active show" id="all" role="tabpanel"
+                                        aria-labelledby="all-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--all">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Transaction</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Deposit</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">Withdrawal</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Deposit</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- DEPOSIT tab -->
+                                    <div class="tab-pane cad-deposit" id="cadDeposit" role="tabpanel" aria-labelledby="cadDeposit-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--deposit">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- WITHDRAWAL tab -->
+                                    <div class="tab-pane ccad-withdrawal" id="cadWithdrawal" role="tabpanel"
+                                        aria-labelledby="cadWithdrawal-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--withdrawal">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img src="./images/logo-easybit.png" alt="">
+                    <p class="text-muted">Copyright</p>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <strong class="d-block mb-2">About Us</strong>
+                    <ul class="list-unstyled">
+                        <li class="pb-2">
+                            <a class="text-white" href="#">FAQs</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">End User Agreement</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">
+                                About Easybit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3">
+                    <strong class="d-block mb-2">Archive</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <a class="text-white" href="#">News Archive</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                    <strong class="d-block mb-2">Contact Us</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <img src="./images/icon-phone.png" alt="">
+                            <a class="text-white" href="#">1.800.888.8888</a>
+                        </li>
+                        <li class="pb-2">
+                            <img src="./images/icon-email.png" alt="">
+                            <a class="text-white" href="#">Send email</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <strong class="d-block mb-2">Subscribe</strong>
+                    <p class="text-white">Sign up for Alerts, Special Offers, Education and Updates.</p>
+                    <div class="search">
+                        <input type="text" class="form-control py-3" placeholder="Enter your email">
+                        <span class="search-action">
+                            <img src="./images/arrow-right.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src='app.bundle.js'></script>
+</body>
+
+</html>
