@@ -142,7 +142,8 @@
                                                 <div class="col-sm-6 text-center">
                                                     <p class="mb-0">$ 100,000.00</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
-                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw">
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw" ype="button"
+                                                        data-toggle="modal" data-target="#abFiatWiredraw">
                                                         <a href="#" class="text-white">Withdraw</a>
                                                     </button>
                                                 </div>
@@ -150,7 +151,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Account Balance FIAT Deposit -->
+                                    <!--MODAL Account Balance FIAT Deposit STEP-1-->
                                     <div class="modal fade" id="abFiatDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -160,7 +161,219 @@
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                    <h6 class="modal-title" id="exampleModalLongTitle">Deposit
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                        USD$/CAD$</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Select Deposit Type</p>
+
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <select name="product" class="custom-select bg-gray">
+                                                                    <option value="BITCOIN BTC">Interac Email Transfer
+                                                                        (CAD$ Only)</option>
+                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep2"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Deposit STEP-2-->
+                                    <div class="modal fade" id="abFiatDepositStep2" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">DEPOSIT
+                                                        USD$/CAD$</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
+                                                    <form class="col-xl-8 pl-0">
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <select name="product" class="custom-select bg-gray">
+                                                                    <option value="BITCOIN BTC">Interac Email Transfer
+                                                                        (CAD$ Only)</option>
+                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
+                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
+                                                    <div class="input-group col-xl-8 mb-3 pl-0">
+                                                        <input type="text" class="form-control bg-gray text-right" placeholder="$ 1,000.00"
+                                                            aria-label="$ 1,000.00">
+                                                    </div>
+                                                    
+                                                    <p class="mb-1">Terms and conditions</p>
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small>1. Allow 1-3 days processing time.</small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    2. Funding fee is 2.5%. This will be applied to the total amount received. The 
+                                                                    amount net of fees will be credited to your fund balance.
+                                                                </small> 
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    3. To fund your account using Interac e-Transfer, log into your Canadian financial 
+                                                                    institution's online banking and initiate the transfer using the parameters set
+                                                                    when you click on CONTINUE. Use copy and paste to ensure accuracy. Failing 
+                                                                    to enter the correct message and secret answer in your transfer may result in 
+                                                                    a longer wait time or a rejected transaction.
+                                                                </small> 
+                                                            </li>
+                                                        </ol>
+                                                        <div class="my-2">
+                                                            <input type="checkbox" name="termsAndconditions" value=""><small>I agree with terms and conditions</small>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep3"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--MODAL Account Balance FIAT Deposit STEP-3-->
+                                    <div class="modal fade" id="abFiatDepositStep3" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep3Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">
+                                                        Interac email transfer request submitted
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Use the details below when sending the email transfer:</p>
+                                                    <div class="col-md-8 offset-md-2">
+                                                        <p class="mb-1">E-Transfer payable to:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="Easybit"
+                                                                aria-label="Easybit"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Send e-transfer to:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="email" class="form-control bg-gray" placeholder="etransfers@easybit.ca"
+                                                                aria-label="etransfers@easybit.ca"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Password for email transfer</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="PASSWORD0123456789"
+                                                                aria-label="PASSWORD0123456789"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="mb-1">Message details:</p>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control bg-gray" placeholder="MESSAGE0123456789"
+                                                                aria-label="MESSAGE0123456789"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositStep4"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Deposit STEP-4-->
+                                    <div class="modal fade" id="abFiatDepositStep4" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep4Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">
+                                                        Interac email transfer request submitted
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="py-2 px-4">
+                                                        Deposit request received. This amount will show up in your wallet 
+                                                        balance but will not be withdrawable until the deposit has been 
+                                                        received and processed. Allow 1-3 days processing time.
+                                                    </p>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button" data-dismiss="modal" aria-label="Close">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--MODAL Account Balance FIAT Wiretransfer -->
+                                    <div class="modal fade" id="abFiatWiredraw" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatWiredrawTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
                                                         USD$/CAD$</h6>
                                                 </div>
                                                 <div class="modal-body">
@@ -219,7 +432,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Account Balance BITCOIN Deposit -->
+                                    <!-- MODAL Account Balance BITCOIN Deposit -->
                                     <div class="modal fade" id="abBitcoinDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abBitcoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -288,7 +501,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Account Balance BITCOIN CASH Deposit -->
+                                    <!-- MODAL Account Balance BITCOIN CASH Deposit -->
                                     <div class="modal fade" id="abBitcoinCashDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abBitcoinCashDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -365,7 +578,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- Account Balance LITECOIN Deposit -->
+                                    <!-- MODAL Account Balance LITECOIN Deposit -->
                                     <div class="modal fade" id="abLitecoinDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abLitecoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -491,162 +704,168 @@
                         <div class="col-sm-12">
                             <div class=" col-sm-12 col-xl-10 offset-xl-1 p-0">
                                 <!-- <div class="tab-content" id="v-pills-tabContent"> -->
-                                    <!-- <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab"> -->
-                                        <div class="tab-content cad-tabs-content">
-                                            <!-- ALL tab -->
-                                            <div class="tab-pane cad-deposit active show" id="all" role="tabpanel"
-                                                aria-labelledby="all-tab">
-                                                <div class="cad-deposit__container">
-                                                    <div class="cad__transactions">
-                                                        <div class="p-0">
-                                                            <table class="table table-sm text-center table--all">
-                                                                <thead class="thead-light">
-                                                                    <tr>
-                                                                        <th class="py-3" scope="col">Date</th>
-                                                                        <th class="py-3" scope="col">Transaction</th>
-                                                                        <th class="py-3" scope="col">Currency</th>
-                                                                        <th class="py-3" scope="col">Description</th>
-                                                                        <th class="py-3" scope="col">Amount</th>
-                                                                        <th class="py-3" scope="col">Status</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 06,2018</td>
-                                                                        <td class="py-3">Deposit</td>
-                                                                        <td class="py-3">Bitcoin (BTC)</td>
-                                                                        <td class="py-3">Bitcoin deposited requested at 12:24am </td>
-                                                                        <td class="py-3">1.000000</td>
-                                                                        <td class="py-3">Requested</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 04,2018</td>
-                                                                        <td class="py-3">Withdrawal</td>
-                                                                        <td class="py-3">BLitecoin (LTC) </td>
-                                                                        <td class="py-3">Withdrawal requested 10/4/2018 at 2:00pm</td>
-                                                                        <td class="py-3">20.000</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 01,2018</td>
-                                                                        <td class="py-3">Deposit</td>
-                                                                        <td class="py-3">Fiat (USD)</td>
-                                                                        <td class="py-3">Interact email transfer</td>
-                                                                        <td class="py-3">$2,000.00</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- DEPOSIT tab -->
-                                            <div class="tab-pane cad-deposit" id="cadDeposit" role="tabpanel"
-                                                aria-labelledby="cadDeposit-tab">
-                                                <div class="cad-deposit__container">
-                                                    <div class="cad__transactions">
-                                                        <div class="p-0">
-                                                            <table class="table table-sm text-center table--deposit">
-                                                                <thead class="thead-light">
-                                                                    <tr>
-                                                                        <th class="py-3" scope="col">Date</th>
-                                                                        <th class="py-3" scope="col">Currency</th>
-                                                                        <th class="py-3" scope="col">Description</th>
-                                                                        <th class="py-3" scope="col">Amount</th>
-                                                                        <th class="py-3" scope="col">Status</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 06,2018</td>
-                                                                        <td class="py-3">Bitcoin (BTC)</td>
-                                                                        <td class="py-3">Bitcoin deposited requested at 12:24am </td>
-                                                                        <td class="py-3">1.000000</td>
-                                                                        <td class="py-3">Requested</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 04,2018</td>
-                                                                        <td class="py-3">BLitecoin (LTC) </td>
-                                                                        <td class="py-3">Withdrawal requested 10/4/2018 at 2:00pm</td>
-                                                                        <td class="py-3">20.000</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 01,2018</td>
-                                                                        <td class="py-3">Fiat (USD)</td>
-                                                                        <td class="py-3">Interact email transfer</td>
-                                                                        <td class="py-3">$2,000.00</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- WITHDRAWAL tab -->
-                                            <div class="tab-pane ccad-withdrawal" id="cadWithdrawal" role="tabpanel"
-                                                aria-labelledby="cadWithdrawal-tab">
-                                                <div class="cad-deposit__container">
-                                                    <div class="cad__transactions">
-                                                        <div class="p-0">
-                                                            <table class="table table-sm text-center table--withdrawal">
-                                                                <thead class="thead-light">
-                                                                    <tr>
-                                                                        <th class="py-3" scope="col">Date</th>
-                                                                        <th class="py-3" scope="col">Currency</th>
-                                                                        <th class="py-3" scope="col">Description</th>
-                                                                        <th class="py-3" scope="col">Amount</th>
-                                                                        <th class="py-3" scope="col">Status</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 01,2018</td>
-                                                                        <td class="py-3">Fiat (USD)</td>
-                                                                        <td class="py-3">Interact email transfer</td>
-                                                                        <td class="py-3">$2,000.00</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 04,2018</td>
-                                                                        <td class="py-3">BLitecoin (LTC) </td>
-                                                                        <td class="py-3">Withdrawal requested 10/4/2018 at 2:00pm</td>
-                                                                        <td class="py-3">20.000</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 06,2018</td>
-                                                                        <td class="py-3">Bitcoin (BTC)</td>
-                                                                        <td class="py-3">Bitcoin deposited requested at 12:24am </td>
-                                                                        <td class="py-3">1.000000</td>
-                                                                        <td class="py-3">Requested</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 04,2018</td>
-                                                                        <td class="py-3">BLitecoin (LTC) </td>
-                                                                        <td class="py-3">Withdrawal requested 10/4/2018 at 2:00pm</td>
-                                                                        <td class="py-3">20.000</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td class="py-3">Oct. 01,2018</td>
-                                                                        <td class="py-3">Fiat (USD)</td>
-                                                                        <td class="py-3">Interact email transfer</td>
-                                                                        <td class="py-3">$2,000.00</td>
-                                                                        <td class="py-3">Completed</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                                <!-- <div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab"> -->
+                                <div class="tab-content cad-tabs-content">
+                                    <!-- ALL tab -->
+                                    <div class="tab-pane cad-deposit active show" id="all" role="tabpanel"
+                                        aria-labelledby="all-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--all">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Transaction</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Deposit</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">Withdrawal</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Deposit</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
-                                    <!-- </div> -->
+                                    </div>
+
+                                    <!-- DEPOSIT tab -->
+                                    <div class="tab-pane cad-deposit" id="cadDeposit" role="tabpanel" aria-labelledby="cadDeposit-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--deposit">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- WITHDRAWAL tab -->
+                                    <div class="tab-pane ccad-withdrawal" id="cadWithdrawal" role="tabpanel"
+                                        aria-labelledby="cadWithdrawal-tab">
+                                        <div class="cad-deposit__container">
+                                            <div class="cad__transactions">
+                                                <div class="p-0">
+                                                    <table class="table table-sm text-center table--withdrawal">
+                                                        <thead class="thead-light">
+                                                            <tr>
+                                                                <th class="py-3" scope="col">Date</th>
+                                                                <th class="py-3" scope="col">Currency</th>
+                                                                <th class="py-3" scope="col">Description</th>
+                                                                <th class="py-3" scope="col">Amount</th>
+                                                                <th class="py-3" scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 06,2018</td>
+                                                                <td class="py-3">Bitcoin (BTC)</td>
+                                                                <td class="py-3">Bitcoin deposited requested at 12:24am
+                                                                </td>
+                                                                <td class="py-3">1.000000</td>
+                                                                <td class="py-3">Requested</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 04,2018</td>
+                                                                <td class="py-3">BLitecoin (LTC) </td>
+                                                                <td class="py-3">Withdrawal requested 10/4/2018 at
+                                                                    2:00pm</td>
+                                                                <td class="py-3">20.000</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="py-3">Oct. 01,2018</td>
+                                                                <td class="py-3">Fiat (USD)</td>
+                                                                <td class="py-3">Interact email transfer</td>
+                                                                <td class="py-3">$2,000.00</td>
+                                                                <td class="py-3">Completed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- </div> -->
                                 <!-- </div> -->
                             </div>
                         </div>
