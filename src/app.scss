@@ -876,8 +876,40 @@ hr {
 }
 
 .funds {
-  .balance-account__item .card{
-    min-height: 350px;
+  .balance-account__item {
+    .card{
+      border: 2px solid $primary !important;
+      box-shadow: none;
+      min-height: 350px;
+
+      &:after {
+        content: url('./images/icon-divider.png');
+        position: absolute;
+      }
+    }
+  }
+
+  .divider-top {
+    .card:after { 
+      top: -24px;
+      left: 10px;
+    }
+  }
+
+  .divider-right--top {
+    .card:after { 
+      right: -64px;
+      transform: rotate(90deg);
+      top: 38px;
+    }
+  }
+
+  .divider-right--bottom {
+    .card:after {
+      bottom: 38px;
+      right: -64px;
+      transform: rotate(90deg);
+    }
   }
 
   .btn-balance__deposit,
