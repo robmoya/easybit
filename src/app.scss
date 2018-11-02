@@ -108,6 +108,7 @@ hr {
   border: 1px solid #444448;
 }
 
+.text-primaryDark { color: #ff8300 !important; }
 
 //** Custom Card **//
 .custom__card {
@@ -880,12 +881,36 @@ hr {
     .card{
       border: 2px solid $primary !important;
       box-shadow: none;
-      min-height: 350px;
+      // min-height: 350px;
 
       &:after {
         content: url('./images/icon-divider.png');
         position: absolute;
       }
+    }
+    .card-header {
+      min-height: 150px;
+
+      img {
+        height: auto;
+        width: 50.99px;
+      }
+
+      .fiat-icon {
+        height: 30px;
+        width: auto;
+      }
+    }
+
+    .modal-btc-withdraw {
+      label {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .modal-divider {
+      border: 1px solid #ededed;
     }
   }
 
@@ -1095,6 +1120,14 @@ hr {
   }
 
   @media screen and (min-width: 768px) {
+    .balance-account__item {
+      .modal-btc-withdraw {
+        label {
+          display: inline-block;
+          width: 200px;
+        }
+      }
+    }
     .recent-transactions {
       &__search-group {
         position: absolute;
@@ -1117,5 +1150,4 @@ hr {
       }
     }
   }
-  
 }

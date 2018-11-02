@@ -115,21 +115,22 @@
                     <div class="mt-4 mb-5"></div>
 
                     <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
+                        <div class="col-lg-8 offset-lg-2">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-top">
+                                    
                                     <div class="card col-sm-12 px-0">
                                         <div class="card-header border-0 py-2 py-md-4 text-center">
                                             <div class="container-fluid px-2">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <img src="./images/$USD.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <img src="./images/$USD.png" alt="" class="mt-4 mt-md-0 mb-3 fiat-icon">
                                                         <h4 class="font-weight-normal my-0">FIAT</h4>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                        <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
                                                     <p class="mb-0">$ 100,000.00</p>
@@ -155,7 +156,7 @@
                                     <div class="modal fade" id="abFiatDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -196,7 +197,7 @@
                                     <div class="modal fade" id="abFiatDepositStep2" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositStep2Title" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -268,7 +269,7 @@
                                     <div class="modal fade" id="abFiatDepositStep3" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositStep3Title" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -339,7 +340,7 @@
                                     <div class="modal fade" id="abFiatDepositStep4" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositStep4Title" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -367,7 +368,7 @@
                                     <div class="modal fade" id="abFiatWiredraw" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatWiredrawTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -400,6 +401,7 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-top">
+                                    
                                     <div class="card col-sm-12 px-0">
                                         <div class="card-header border-0 py-2 py-md-4 text-center">
                                             <div class="container-fluid px-2">
@@ -411,7 +413,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                        <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
                                                     <p class="mb-0">$ 100,000.00</p>
@@ -424,7 +426,8 @@
                                                 <div class="col-sm-6 text-center">
                                                     <p class="mb-0">$ 100,000.00</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
-                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw">
+                                                    <button class="btn btn-primary ml-auto btn-balance__withdraw" type="button"
+                                                        data-toggle="modal" data-target="#abBitcoinWithdraw">
                                                         <a href="#" class="text-white">Withdraw</a>
                                                     </button>
                                                 </div>
@@ -436,7 +439,7 @@
                                     <div class="modal fade" id="abBitcoinDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abBitcoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -466,6 +469,96 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- MODAL Account Balance BITCOIN Withdraw -->
+                                    <div class="modal fade modal-btc-withdraw" id="abBitcoinWithdraw" tabindex="-1" role="dialog" aria-labelledby="abBitcoinWithdrawTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/BTC-medium.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">BITCOIN WITHDRAWAL</h6>
+                                                        <div class="row">
+                                                            <div class="col-sm-10 offset-sm-1 pt-2">
+                                                                <small class="d-block">10.00000 BTC current balance in wallet.</small>
+                                                                <small class="d-block">0.00000 BTC held on orders.</small>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="modal-divider mb-0">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body pt-2">
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    1. Minimum withdrawal amount 0.0020000BTC.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    2. Do not withdraw directly to a crowdfund or ICO. We will not credit your account with tokens from that sale.
+                                                                </small>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">BTC Withdrawal Address</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">Amount</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="" aria-describedby="btcButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white" type="button" id="btcButton">
+                                                                BTC
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+                                                        <small class="d-block">Transaction Fee:</small>
+                                                        <small class="text-danger">-0.0005000</small>
+                                                    </div>
+
+                                                    <hr class="modal-divider mb-0">
+
+                                                    <div class="col-sm-8 offset-sm-2 mb-2">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <small>Total:</small>
+                                                            </div>
+                                                            <div class="col-sm-6 text-right">
+                                                                <small class=" font-weight-bold">1.000</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abFiatDepositStep3" data-dismiss="modal" aria-label="Close">
+                                                        WITHDRAW 1.0000 BTC 
+                                                    </button>
+
+                                                    <div class="modal-btc-withdraw__disclaimer">
+                                                        <p class="font-weight-bold mb-0">Please Note</p>
+                                                            <li>
+                                                                <small>
+                                                                    Once you have submitted your withdrawal request, we will send a confirmation email. Please then click on the confirmation link in your email.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    After making a withdrawal, you can track its progress on the transactions page.
+                                                                </small>
+                                                            </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-6 d-flex px-xl-5 justify-content-start align-items-start mb-5 text-left balance-account__item divider-right--top">
@@ -474,13 +567,13 @@
                                             <div class="container-fluid px-2">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                        <img src="./images/BTC-medium-left.png" alt="" class="mt-4 mt-md-0 mb-3">
+                                                        <img src="./images/bitcoin-logo-green.png" alt="" class="mt-4 mt-md-0 mb-3">
                                                         <h4 class="font-weight-normal my-0">BITCOIN CASH</h4>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                        <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
                                                     <p class="mb-0">$ 100,000.00</p>
@@ -505,7 +598,7 @@
                                     <div class="modal fade" id="abBitcoinCashDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abBitcoinCashDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
@@ -557,7 +650,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-body pt-2 pt-md-4 pb-5">
+                                        <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
                                                     <p class="mb-0">$ 100,000.00</p>
@@ -582,7 +675,7 @@
                                     <div class="modal fade" id="abLitecoinDeposit" tabindex="-1" role="dialog"
                                         aria-labelledby="abLitecoinDepositTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
+                                            <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
