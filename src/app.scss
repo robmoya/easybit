@@ -15,6 +15,10 @@
 //     background-image: url('./images/header-bg.png');
 // }
 
+input {
+  border-radius: 0.25rem !important;
+}
+
 textarea {
   background-clip: padding-box;
   border: 1px solid #fff;
@@ -747,6 +751,9 @@ hr {
   .btc-icon {
     background-image: url(./images/BTC.png);
   }
+  .btc-cash-icon {
+    background-image: url(./images/bitcoin-logo-green.png);
+  }
   .ltc-icon {
     background-image: url(./images/LTC.png);
   }
@@ -911,6 +918,21 @@ hr {
 
     .modal-divider {
       border: 1px solid #ededed;
+    }
+
+    .modal-btc-withdraw__step-3 {
+      .modal-header {
+        img {
+          margin-top: -35px;
+        }
+      }
+    }
+
+    .modal-btc-cash-withdraw {
+      img {
+        height: 51px;
+        width: 51px;
+      }
     }
   }
 
@@ -1125,6 +1147,12 @@ hr {
         label {
           display: inline-block;
           width: 200px;
+        }
+      }
+
+      .modal-btc-cash-withdraw {
+        label {
+          width: 212px;
         }
       }
     }
