@@ -744,7 +744,8 @@ hr {
 
 // ** New design homepage ** //
 .homepage,
-.funds-trade {
+.funds,
+.trade {
   small {
     color: $small-gray;
   }
@@ -883,7 +884,8 @@ hr {
   }
 }
 
-.funds-trade {
+.funds,
+.trade {
   .balance-account__item {
     .card{
       border: 2px solid $primary !important;
@@ -1193,6 +1195,24 @@ hr {
       .modal-dialog {
         max-width: 600px;
       }
+    }
+  }
+}
+
+.trade {
+  .change-group {
+    .input-group-append {
+      margin-left: -34px;
+      z-index: 2;
+    }
+  }
+  .modal-header {
+    img {
+      height: 34px;
+      width: 34px;
+    }
+    p {
+      vertical-align: text-top;
     }
   }
 }
