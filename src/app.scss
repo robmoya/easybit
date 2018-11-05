@@ -744,7 +744,7 @@ hr {
 
 // ** New design homepage ** //
 .homepage,
-.funds {
+.funds-trade {
   small {
     color: $small-gray;
   }
@@ -883,7 +883,7 @@ hr {
   }
 }
 
-.funds {
+.funds-trade {
   .balance-account__item {
     .card{
       border: 2px solid $primary !important;
@@ -896,7 +896,7 @@ hr {
       }
     }
     .card-header {
-      min-height: 150px;
+      min-height: 130px;
 
       img {
         height: auto;
@@ -943,6 +943,13 @@ hr {
     }
   }
 
+  .divider-top--right {
+    .card:after { 
+      top: -24px;
+      right: 0;
+    }
+  }
+
   .divider-right--top {
     .card:after { 
       right: -64px;
@@ -966,17 +973,27 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .btn-balance__deposit {
     background-image: url(./images/btn-balance-deposit.png);
+    min-width: 94px;
   }
+  
   .btn-balance__withdraw {
     background-image: url(./images/btn-balance-withdraw.png);
+    min-width: 94px;
   }
+
+  .balance-text {
+    min-height: 40px;
+  }
+  
   .icon-download {
     background-image: url(./images/icon-download.png);
     background-position: center;
     background-size: cover;
   }
+  
   .modal {
     .modal-dialog {
       max-width: 650px;
