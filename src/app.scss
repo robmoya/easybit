@@ -1215,4 +1215,18 @@ hr {
       vertical-align: text-top;
     }
   }
+  .payment-button {
+    cursor: pointer;
+    min-height: 60px;
+    width: 100%;
+
+    &:hover {
+      background-color: $primary !important;
+   }
+  }
+  .payment-group__usd {
+    img {
+      margin-top: -20px;
+    }
+  }
 }
