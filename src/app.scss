@@ -744,7 +744,8 @@ hr {
 
 // ** New design homepage ** //
 .homepage,
-.funds {
+.funds,
+.trade {
   small {
     color: $small-gray;
   }
@@ -883,7 +884,8 @@ hr {
   }
 }
 
-.funds {
+.funds,
+.trade {
   .balance-account__item {
     .accounts-logo {
       height: 51px;
@@ -900,7 +902,7 @@ hr {
       }
     }
     .card-header {
-      min-height: 150px;
+      min-height: 130px;
 
       img {
         height: auto;
@@ -947,6 +949,13 @@ hr {
     }
   }
 
+  .divider-top--right {
+    .card:after { 
+      top: -24px;
+      right: 0;
+    }
+  }
+
   .divider-right--top {
     .card:after { 
       right: -64px;
@@ -970,17 +979,27 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .btn-balance__deposit {
     background-image: url(./images/btn-balance-deposit.png);
+    min-width: 94px;
   }
+  
   .btn-balance__withdraw {
     background-image: url(./images/btn-balance-withdraw.png);
+    min-width: 94px;
   }
+
+  .balance-text {
+    min-height: 40px;
+  }
+  
   .icon-download {
     background-image: url(./images/icon-download.png);
     background-position: center;
     background-size: cover;
   }
+  
   .modal {
     .modal-dialog {
       max-width: 650px;
@@ -1180,6 +1199,53 @@ hr {
       .modal-dialog {
         max-width: 600px;
       }
+    }
+  }
+}
+
+.trade {
+  .progressbar-custom {
+    width: 100%;
+  }
+
+  .change-group {
+    .input-group-append {
+      margin-left: -34px;
+      z-index: 2;
+    }
+  }
+  .modal-header {
+    img {
+      height: 34px;
+      width: 34px;
+    }
+    p {
+      vertical-align: text-top;
+    }
+  }
+  .payment-button {
+    cursor: pointer;
+    min-height: 60px;
+    width: 100%;
+
+    &:hover {
+      background-color: $primary !important;
+    }
+
+    &.active {
+      background-color: $primary !important;
+    }
+  }
+  .payment-group__usd {
+    img {
+      margin-top: -20px;
+    }
+  }
+  .payment-group__bitcoin-wallet {
+    img {
+      height: 38px;
+      margin-top: -24px;
+      width: 38px;
     }
   }
 }

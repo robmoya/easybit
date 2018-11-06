@@ -130,6 +130,12 @@ module.exports = {
       template: './src/funds.html',
       filename: 'funds.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Trade',
+      hash: true,
+      template: './src/trade.html',
+      filename: 'trade.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,
