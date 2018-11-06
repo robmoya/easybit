@@ -1058,8 +1058,7 @@
                                                     <p class="mb-0">1,000.000</p>
                                                     <small class="mb-2 d-block balance-text">Total Balance</small>
                                                     <small class="d-block">$68.00</small>
-                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
-                                                        data-toggle="modal" data-target="#abLitecoinDeposit">
+                                                    <button class="btn btn-primary ml-auto btn-balance__deposit" data-target="#LitecoinBuy" type="button" data-toggle="modal">
                                                         <a href="#" class="text-white">Buy</a>
                                                     </button>
                                                 </div>
@@ -1075,6 +1074,383 @@
                                         </div>
                                     </div>
 
+                                    <!-- MODAL LITECOIN CASH: BUY LITECOIN -->
+                                    <div class="modal fade" id="LitecoinBuy" tabindex="-1" role="dialog"
+                                        aria-labelledby="LitecoinBuyTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4 text-left bg-gray px-2 py-2">
+                                                        <img src="./images/LTC-medium.png" alt="">
+                                                        <p class="modal-title d-inline-block mb-0 ml-4 font-weight-bold d-inline-block" id="exampleModalLongTitle">BUY LITECOIN</p>
+                                                        <p class="text-primaryDark d-inline-block float-right mt-1">USD $68.00 / 1 LTC</p>
+                                                    </div>
+                                                    <hr class="modal-divider mt-4 mb-0">
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">Payment Method</p>
+                                                        <div class="row">
+                                                            <div class="col-sm-6 mb-2 payment-group">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button">
+                                                                    <small class="font-weight-bold mr-3">Credit Card</small>
+                                                                    <img src="./images/credit-card-icon.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__usd">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button" type="button" data-toggle="modal" data-target="#LitecoinBuyWFiat" data-dismiss="modal" aria-label="Close">
+                                                                    <img src="./images/dollar-icon.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">USD FIAT WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">$100,000.00 USD</small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__bitcoin-wallet">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button" type="button" data-toggle="modal" data-target="#LitecoinBuyWBtc" data-dismiss="modal" aria-label="Close">
+                                                                    <img src="./images/BTC-medium.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">BITCOIN WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">10.000000 BTC </small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL LITECOIN: BUY LITECOIN with Fiat STEP 1-->
+                                    <div class="modal fade" id="LitecoinBuyWFiat" tabindex="-1" role="dialog"
+                                        aria-labelledby="LitecoinBuyWFiatTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4 text-left bg-gray px-2 py-2">
+                                                        <img src="./images/LTC-medium.png" alt="">
+                                                        <p class="modal-title d-inline-block mb-0 ml-4 font-weight-bold d-inline-block" id="exampleModalLongTitle">BUY LITECOIN</p>
+                                                        <p class="text-primaryDark d-inline-block float-right mt-1">USD $50.25 / 1 BTC</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider mt-4 mb-0">
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">Payment Method</p>
+                                                        <div class="row">
+                                                            <div class="col-sm-6 mb-2 payment-group">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button">
+                                                                    <small class="font-weight-bold mr-3">Credit Card</small>
+                                                                    <img src="./images/credit-card-icon.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__usd">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button active">
+                                                                    <img src="./images/dollar-icon.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">USD FIAT WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">$100,000.00 USD</small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__bitcoin-wallet">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button" type="button" data-toggle="modal" data-target="#LitecoinBuyWBtc" data-dismiss="modal" aria-label="Close">
+                                                                    <img src="./images/BTC-medium.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">BITCOIN WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">10.000000 BTC</small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="modal-divider my-3">
+
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">$USD FIAT - Account Balance</p>
+                                                        <p class="mb-0">Total Balance(USD) - $100,000.00</p>
+                                                        <p>Available Balance(USD) - $100,000.00</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider my-3">
+
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">Amount</p>
+                                                        <div class="row change-group">
+                                                            <div class="col-sm-5">
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" class="form-control bg-gray" placeholder="0.00" aria-label="" value="">
+                                                                    <div class="input-group-append">
+                                                                        <small class="text-muted">USD</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 text-center mb-3 mb-md-0">
+                                                                <img src="./images/change-icon.png" alt="">
+                                                            </div>
+                                                            <div class="col-sm-5">
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" class="form-control bg-gray" placeholder="0.00" aria-label="" value="">
+                                                                    <div class="input-group-append">
+                                                                        <small class="text-muted">LTC</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <small class="font-weight-bold">Transaction Processing Fee ................. 2.5%</small>
+                                                    </div>
+                                                    
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#LitecoinBuyWFiatStep2" data-dismiss="modal" aria-label="Close">
+                                                       BUY LITECOIN
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL LITECOIN: BUY LITECOIN with Fiat STEP 2-->
+                                    <div class="modal fade" id="LitecoinBuyWFiatStep2" tabindex="-1" role="dialog" aria-labelledby="LitecoinBuyWFiatStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <div class="d-inline-block">
+                                                            <h6 class="modal-title text-primaryDark font-weight-bold" id="exampleModalLongTitle">0.0000 LTC</h6>
+                                                            <h5 class="font-weight-normal text-primaryDark">@US$ 68.00 / 1 LTC</h5>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                </div>
+                                                
+                                                <div class="modal-body pt-2">
+                                                    <div>
+                                                        <small class="d-block">Payment Method</small>
+                                                        <p>Easybit $USD Wallet</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                    <div>
+                                                        <small>Depositing to</small>
+                                                        <p>My Easybit Litecoin Wallet</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <small>Transaction Fee</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small>US$ 0.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-sm-6">
+                                                            <small>Total Amount</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small>US$ 0.00</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <small class="font-weight-bold">Litecoin to be received</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small class="font-weight-bold">LTC 0.00</small>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinWithdrawStep3" data-dismiss="modal" aria-label="Close">
+                                                        BUY LITECOIN
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL LITECOIN: BUY LITECOIN with BTC STEP 1-->
+                                    <div class="modal fade" id="LitecoinBuyWBtc" tabindex="-1" role="dialog"
+                                        aria-labelledby="LitecoinBuyWBtcTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4 text-left bg-gray px-2 py-2">
+                                                        <img src="./images/LTC-medium.png" alt="">
+                                                        <p class="modal-title d-inline-block mb-0 ml-4 font-weight-bold d-inline-block" id="exampleModalLongTitle">BUY LITECOIN</p>
+                                                        <p class="text-primaryDark d-inline-block float-right mt-1">USD $55 / 1 LTC</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider mt-4 mb-0">
+
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">Payment Method</p>
+                                                        <div class="row">
+                                                            <div class="col-sm-6 mb-2 payment-group">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button">
+                                                                    <small class="font-weight-bold mr-3">Credit Card</small>
+                                                                    <img src="./images/credit-card-icon.png" alt="">
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__usd">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button" type="button" data-toggle="modal" data-target="#LitecoinBuyWFiat" data-dismiss="modal" aria-label="Close">
+                                                                    <img src="./images/dollar-icon.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">USD FIAT WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">$100,000.00 USD</small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-sm-6 payment-group payment-group__bitcoin-wallet">
+                                                                <button class="bg-gray border-0 px-3 py-2 payment-button active">
+                                                                    <img src="./images/BTC-medium.png" alt="" class="mr-3">
+                                                                    <div class="d-inline-block text-left">
+                                                                        <small class="d-block">BITCOIN WALLET</small>
+                                                                        <small class="font-weight-bold mr-2">10.000000 BTC</small>
+                                                                    </div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="modal-divider my-3">
+
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">$USD FIAT - Account Balance</p>
+                                                        <p class="mb-0">Total Balance(BCH) - 10.000000</p>
+                                                        <p>Available Balance(BCH) - 10.000000</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider my-3">
+
+                                                    <div>
+                                                        <p class="text-black font-weight-bold d-block mb-2">Amount</p>
+                                                        <div class="row change-group">
+                                                            <div class="col-sm-5">
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" class="form-control bg-gray" placeholder="0.00" aria-label="" value="">
+                                                                    <div class="input-group-append">
+                                                                        <small class="text-muted">BTC</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 text-center mb-3 mb-md-0">
+                                                                <img src="./images/change-icon.png" alt="">
+                                                            </div>
+                                                            <div class="col-sm-5">
+                                                                <div class="input-group mb-3">
+                                                                    <input type="number" class="form-control bg-gray" placeholder="0.00" aria-label="" value="">
+                                                                    <div class="input-group-append">
+                                                                        <small class="text-muted">LTC</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <small class="font-weight-bold">Transaction Processing Fee ................. 2.5%</small>
+                                                    </div>
+                                                    
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#LitecoinBuyWBtcStep2" data-dismiss="modal" aria-label="Close">
+                                                       BUY LITECOIN
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL LITECOIN: BUY LITECOIN with BTC STEP 2-->
+                                    <div class="modal fade" id="LitecoinBuyWBtcStep2" tabindex="-1" role="dialog" aria-labelledby="LitecoinBuyWBtcStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <div class="d-inline-block">
+                                                            <h6 class="modal-title text-primaryDark font-weight-bold" id="exampleModalLongTitle">0.0000 LTC</h6>
+                                                            <h5 class="font-weight-normal text-primaryDark">@BTC 0.00809 / 1 LTC</h5>
+                                                        </div>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                </div>
+                                                
+                                                <div class="modal-body pt-2">
+                                                    <div>
+                                                        <small class="d-block">Payment Method</small>
+                                                        <p>Easybit Litecoin Wallet</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                    <div>
+                                                        <small>Depositing to</small>
+                                                        <p>My Easybit Litecoin Wallet</p>
+                                                    </div>
+
+                                                    <hr class="modal-divider">
+
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <small>Transaction Fee</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small>BTC 0.000</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-sm-6">
+                                                            <small>Total Amount</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small>BTC 0.000</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <small class="font-weight-bold">Litecoin to be received</small>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <small class="font-weight-bold">LTC 0.00</small>
+                                                        </div>
+                                                    </div>
+                                                        
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinWithdrawStep3" data-dismiss="modal" aria-label="Close">
+                                                        BUY LITECOIN
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                     <!-- MODAL LITECOIN CASH: SELL LITECOIN STEP 1-->
                                     <div class="modal fade" id="LitecoinCashSell" tabindex="-1" role="dialog"
                                         aria-labelledby="LitecoinCashSellTitle" aria-hidden="true">
