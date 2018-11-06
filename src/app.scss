@@ -885,6 +885,10 @@ hr {
 
 .funds {
   .balance-account__item {
+    .accounts-logo {
+      height: 51px;
+      width: 51px;
+    }
     .card{
       border: 2px solid $primary !important;
       box-shadow: none;
