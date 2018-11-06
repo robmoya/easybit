@@ -1226,7 +1226,11 @@ hr {
 
     &:hover {
       background-color: $primary !important;
-   }
+    }
+
+    &.active {
+      background-color: $primary !important;
+    }
   }
   .payment-group__usd {
     img {
