@@ -146,7 +146,7 @@
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__withdraw" ype="button"
                                                         data-toggle="modal" data-target="#abFiatWiredraw">
-                                                        <a href="#" class="text-white">Withdraw</a>
+                                                        <a href="#" class="text-white">Prepaid Card</a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -366,35 +366,90 @@
                                     </div>
 
                                     <!--MODAL Account Balance FIAT Wiretransfer -->
-                                    <div class="modal fade" id="abFiatWiredraw" tabindex="-1" role="dialog"
-                                        aria-labelledby="abFiatWiredrawTitle" aria-hidden="true">
+                                    <div class="modal fade" id="abFiatWiredraw" tabindex="-1" role="dialog" aria-labelledby="abFiatWiredrawTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content px-3 pb-3">
-                                                <div class="modal-header border-0 text-center d-block">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
                                                     <button type="button" class="close d-block text-right" data-dismiss="modal"
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                    <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
-                                                        USD$/CAD$</h6>
+                                                    <div class="mt-4">
+                                                        <img src="./images/$USD.png" alt="" class="mb-2">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">CASH WITHDRAWAL</h6>
+                                                        <small class="d-block text-justify">
+                                                            All fiat (CAD$) withdrawals will be credited to a prepaid card assigned to you. If you have not yet
+                                                            received you prepaid card, please open a ticket to request for one to be sent to you.
+                                                        </small>
+                                                        <hr class="modal-divider mb-0">
+                                                    </div>
                                                 </div>
-                                                <div class="modal-body">
-                                                    <p>Select Deposit Type</p>
+                                                <div class="modal-body pt-2">
+                                                    <div class="input-group mb0=-0">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">ENTER AMOUNT TO WITHDRAW</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="">
+                                                    </div>
+                                                    <small class="text-muted text-md-right d-block mb-3">Maximum withdrawal amount is $2,500 per day</small>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">PREPAID CARD TO CREDIT</label>
+                                                        <select name="product" class="custom-select bg-gray">
+                                                            <option value="BITCOIN BTC">1234-5678-9102-1234</option>
+                                                            <option value="BITCOIN BTC2">9102-5678-9102-1234</option>
+                                                            <option value="BITCOIN BTC3">5678-9102-1234-9102</option>
+                                                        </select>
+                                                    </div>
 
-                                                    <form>
-                                                        <div class="form-row">
-                                                            <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select bg-gray">
-                                                                    <option value="BITCOIN BTC">Bank Wire Transfer
-                                                                        (SUD$ or CAD$)</option>
-                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abFiatWiredrawStep2" data-dismiss="modal" aria-label="Close">
+                                                        SUBMIT WITHDRAWAL REQUEST
+                                                    </button>
+                                                    
+                                                    <hr class="modal-divider">
+
+                                                    <div class="modal-btc-withdraw__disclaimer">
+                                                        <p class="font-weight-bold mb-0">Please Note</p>
+                                                            <li>
+                                                                <small>
+                                                                    You will receive an email to confirm your withdrawal request click on APPROVE to process the withdrawal or DENY if you would like to cancel the withdrawal.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    Withdrawal request not approved within 3 hours will be automatically cancelled.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    A bank fee of $3.00 will be applied to all withdrawals.
+                                                                </small>
+                                                            </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- MODAL Account Balance FIAT Wiretransfer Step 2 -->
+                                    <div class="modal fade modal-btc-withdraw" id="abFiatWiredrawStep2" tabindex="-1" role="dialog" aria-labelledby="abFiatWiredrawStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <h6 class="modal-title font-weight-bold" id="exampleModalLongTitle">Withdrawal to prepaid card request submited</h6>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="modal-body pt-2">
+                                                    <small class="d-block">
+                                                        Withdrawal request received. You will receieve an email to confirm the withdrawal. The email request will expire after 48 hours.
+                                                    </small>
+                                                        
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-dismiss="modal" aria-label="Close">
+                                                        Close
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -417,7 +472,7 @@
                                         <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">10.000000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
                                                         data-toggle="modal" data-target="#abBitcoinDeposit">
@@ -425,7 +480,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="col-sm-6 text-center">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">10.000000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__withdraw" type="button"
                                                         data-toggle="modal" data-target="#abBitcoinWithdraw">
@@ -515,7 +570,7 @@
                                                         <label for="" class="mb-0 pt-2 mr-2 text-md-right">Amount</label>
                                                         <input type="text" class="form-control bg-gray" placeholder="" aria-label="" aria-describedby="btcButton">
                                                         <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white" type="button" id="btcButton">
+                                                            <button class="btn btn-outline-secondary border-0 bg-primary text-white" type="button" id="btcButton">
                                                                 BTC
                                                             </button>
                                                         </div>
@@ -534,7 +589,7 @@
                                                                 <small>Total:</small>
                                                             </div>
                                                             <div class="col-sm-6 text-right">
-                                                                <small class=" font-weight-bold">1.000</small>
+                                                                <small class=" font-weight-bold">1.0000</small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -619,7 +674,7 @@
                                                     <hr class="modal-divider">
                                                      
                                                     <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinWithdrawStep3" data-dismiss="modal" aria-label="Close">
-                                                        WITHDRAW 1.0000 BTC 
+                                                        WITHDRAW BTC 
                                                     </button>
                                                 </div>
                                             </div>
@@ -670,7 +725,7 @@
                                         <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">100.00000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
                                                         data-toggle="modal" data-target="#abBitcoinCashDeposit">
@@ -678,7 +733,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="col-sm-6 text-center">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">100.00000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__withdraw" data-target="#abBitcoinCashWithdraw" type="button" data-toggle="modal">
                                                         <a href="#" class="text-white">Withdraw</a>
@@ -699,7 +754,7 @@
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                     <div class="mt-4">
-                                                        <img src="./images/BTC-medium-left.png" alt="" class="mb-2">
+                                                        <img src="./images/bitcoin-logo-green.png" alt="" class="mb-2 accounts-logo">
                                                         <h6 class="modal-title" id="exampleModalLongTitle">DEPOSIT
                                                             BITCOIN CASH</h6>
                                                     </div>
@@ -732,66 +787,94 @@
                                     </div>
 
                                     <!-- MODAL Account Balance BITCOIN CASH Withdraw -->
-                                    <div class="modal fade modal-btc-withdraw modal-btc-cash-withdraw" id="abBitcoinCashWithdraw" tabindex="-1" role="dialog" aria-labelledby="abBitcoinCashWithdrawTitle" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content px-3 pb-3">
-                                                    <div class="modal-header border-0 text-center d-block pb-0">
-                                                        <button type="button" class="close d-block text-right" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <div class="mt-4">
-                                                            <img src="./images/bitcoin-logo-green.png" alt="" class="mb-2">
-                                                            <h6 class="modal-title" id="exampleModalLongTitle">CASH WITHDRAWAL</h6>
-                                                            <small class="d-block text-justify">
-                                                                All fiat (CAD$) withdrawals will be credited to a prepaid card assigned to you. If you have not yet
-                                                                received you prepaid card, please open a ticket to request for one to be sent to you.
-                                                            </small>
-                                                            <hr class="modal-divider mb-0">
+                                    <div class="modal fade modal-btc-withdraw" id="abBitcoinCashWithdraw" tabindex="-1" role="dialog" aria-labelledby="abBitcoinCashWithdrawTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/bitcoin-logo-green.png" alt="" class="mb-2 accounts-logo">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">BITCOIN CASH WITHDRAWAL</h6>
+                                                        <div class="row">
+                                                            <div class="col-sm-10 offset-sm-1 pt-2">
+                                                                <small class="d-block">100.0000 BCH current balance in wallet.</small>
+                                                                <small class="d-block">0.0000 BCH held on orders.</small>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="modal-divider mb-0">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body pt-2">
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    1. Minimum withdrawal amount 0.0020000 BCH.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    2. Do not withdraw directly to a crowdfund or ICO. We will not credit your
+                                                                    account with tokens from that sale.
+                                                                </small>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">BCH Withdrawal Address</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">Amount</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="" aria-describedby="btcButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 bg-primary text-white" type="button" id="btcButton">
+                                                                BCH
+                                                            </button>
                                                         </div>
                                                     </div>
-                                                    <div class="modal-body pt-2">
-                                                        <div class="input-group mb0=-0">
-                                                            <label for="" class="mb-0 pt-2 mr-2 text-md-right">ENTER AMOUNT TO WITHDRAW</label>
-                                                            <input type="text" class="form-control bg-gray" placeholder="" aria-label="">
-                                                        </div>
-                                                        <small class="text-muted text-md-right d-block mb-3">Maximum withdrawal amount is $2,500 per day</small>
-                                                        <div class="input-group mb-3">
-                                                            <label for="" class="mb-0 pt-2 mr-2 text-md-right">PREPAID CARD TO CREDIT</label>
-                                                            <select name="product" class="custom-select bg-gray">
-                                                                <option value="BITCOIN BTC">1234-5678-9102-1234</option>
-                                                                <option value="BITCOIN BTC2">9102-5678-9102-1234</option>
-                                                                <option value="BITCOIN BTC3">5678-9102-1234-9102</option>
-                                                            </select>
-                                                        </div>
-    
-                                                        <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinCashWithdrawStep2" data-dismiss="modal" aria-label="Close">
-                                                            SUBMIT WITHDRAWAL REQUEST
-                                                        </button>
-                                                        
-                                                        <hr class="modal-divider">
 
-                                                        <div class="modal-btc-withdraw__disclaimer">
-                                                            <p class="font-weight-bold mb-0">Please Note</p>
-                                                                <li>
-                                                                    <small>
-                                                                        You will receive an email to confirm your withdrawal request click on APPROVE to process the withdrawal or DENY if you would like to cancel the withdrawal.
-                                                                    </small>
-                                                                </li>
-                                                                <li>
-                                                                    <small>
-                                                                        Withdrawal request not approved within 3 hours will be automatically cancelled.
-                                                                    </small>
-                                                                </li>
-                                                                <li>
-                                                                    <small>
-                                                                        A bank fee of $3.00 will be applied to all withdrawals.
-                                                                    </small>
-                                                                </li>
+                                                    <div>
+                                                        <small class="d-block">Transaction Fee:</small>
+                                                        <small class="text-danger">-0.0005000</small>
+                                                    </div>
+
+                                                    <hr class="modal-divider mb-0">
+
+                                                    <div class="col-sm-8 offset-sm-2 mb-2">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <small>Total:</small>
+                                                            </div>
+                                                            <div class="col-sm-6 text-right">
+                                                                <small class=" font-weight-bold">1.0000</small>
+                                                            </div>
                                                         </div>
+                                                    </div>
+
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinCashWithdrawStep2" data-dismiss="modal" aria-label="Close">
+                                                        WITHDRAW 1.0000 BCH
+                                                    </button>
+
+                                                    <div class="modal-btc-withdraw__disclaimer">
+                                                        <p class="font-weight-bold mb-0">Please Note</p>
+                                                            <li>
+                                                                <small>
+                                                                    Once you have submitted your withdrawal request, we will send a confirmation email. Please then click on the confirmation link in your email.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    After making a withdrawal, you can track its progress on the transactions page.
+                                                                </small>
+                                                            </li>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                     </div>
     
                                     <!-- MODAL Account Balance BITCOIN CASH Withdraw Step 2 -->
@@ -806,8 +889,8 @@
                                                     <div class="mt-4">
                                                         <img src="./images/bitcoin-logo-green.png" alt="">
                                                         <div class="d-inline-block">
-                                                            <h6 class="modal-title text-primaryDark font-weight-bold" id="exampleModalLongTitle">0.0000 BTC</h6>
-                                                            <h5 class="font-weight-normal text-primaryDark">$USD 7000.00/1 BTC</h5>
+                                                            <h6 class="modal-title text-primaryDark font-weight-bold" id="exampleModalLongTitle">0.0000 BCH</h6>
+                                                            <h5 class="font-weight-normal text-primaryDark">$USD 535.00/1 BCH</h5>
                                                         </div>
                                                     </div>
 
@@ -818,14 +901,14 @@
                                                 <div class="modal-body pt-2">
                                                     <div>
                                                         <small class="d-block">Withdraw Address</small>
-                                                        <small class="font-weight-bold">My Bitcoin Wallet</small>
+                                                        <small class="font-weight-bold">My Bitcoin Cash Wallet</small>
                                                     </div>
                                                     
                                                     <hr class="modal-divider">
 
                                                     <div>
                                                         <small class="d-block">Depositing to</small>
-                                                        <small class="font-weight-bold">1tridfatSLHRtKNngkdXmemesR76b53LETtpyT</small>
+                                                        <small class="font-weight-bold">1cashSLRHtKNngkdXmemesR76b53LETtpyT</small>
                                                     </div>
 
                                                     <hr class="modal-divider">
@@ -836,7 +919,7 @@
                                                                 <small>Transaction Processing Fee:</small>
                                                             </div>
                                                             <div class="col-sm-6 text-right">
-                                                                <small class=" font-weight-bold">BTC 0.000</small>
+                                                                <small class=" font-weight-bold">BHC 0.000</small>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -844,7 +927,7 @@
                                                                 <small>Total Amount:</small>
                                                             </div>
                                                             <div class="col-sm-6 text-right">
-                                                                <small class=" font-weight-bold">BTC 0.000</small>
+                                                                <small class=" font-weight-bold">BHC 0.000</small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -852,7 +935,7 @@
                                                     <hr class="modal-divider">
                                                         
                                                     <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abBitcoinCashWithdrawStep3" data-dismiss="modal" aria-label="Close">
-                                                        WITHDRAW 1.0000 BTC 
+                                                        WITHDRAW BCH 
                                                     </button>
                                                 </div>
                                             </div>
@@ -861,29 +944,29 @@
     
                                     <!-- MODAL Account Balance BITCOIN CASH Withdraw Step 3 -->
                                     <div class="modal fade modal-btc-withdraw" id="abBitcoinCashWithdrawStep3" tabindex="-1" role="dialog" aria-labelledby="abBitcoinCashWithdrawStep3Title" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-                                                <div class="modal-content px-3 pb-3">
-                                                    <div class="modal-header border-0 text-center d-block pb-0">
-                                                        <button type="button" class="close d-block text-right" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <div class="mt-4">
-                                                            <h6 class="modal-title font-weight-bold" id="exampleModalLongTitle">Bitcoin cash withdrawal request submitted</h6>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="modal-body pt-2">
-                                                        <small class="d-block">
-                                                            Withdrawal request received. You will receive an email confirm the withdrawal. The email request will expire after 3 hours.
-                                                        </small>
-                                                            
-                                                        <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-dismiss="modal" aria-label="Close">
-                                                            Close
-                                                        </button>
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <h6 class="modal-title font-weight-bold" id="exampleModalLongTitle">Bitcoin cash withdrawal request submitted</h6>
                                                     </div>
                                                 </div>
+                                                
+                                                <div class="modal-body pt-2">
+                                                    <small class="d-block">
+                                                        Withdrawal request received. You will receieve an email to confirm the withdrawal. The email request will expire after 48 hours.
+                                                    </small>
+                                                        
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-dismiss="modal" aria-label="Close">
+                                                        Close
+                                                    </button>
+                                                </div>
                                             </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -903,7 +986,7 @@
                                         <div class="card-body pt-2 pt-md-4 pb-4">
                                             <div class="row">
                                                 <div class="col-sm-6 text-center mb-4">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">1,000.000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__deposit" type="button"
                                                         data-toggle="modal" data-target="#abLitecoinDeposit">
@@ -911,7 +994,7 @@
                                                     </button>
                                                 </div>
                                                 <div class="col-sm-6 text-center">
-                                                    <p class="mb-0">$ 100,000.00</p>
+                                                    <p class="mb-0">1,000.000</p>
                                                     <small class="mb-2 mb-md-4 d-block">Total Balance</small>
                                                     <button class="btn btn-primary ml-auto btn-balance__withdraw" data-target="#abLitecoinWithdraw" type="button" data-toggle="modal">
                                                         <a href="#" class="text-white">Withdraw</a>
@@ -976,8 +1059,86 @@
                                         </div>
                                     </div>
 
-                                     <!-- MODAL Account Balance LITECOIN Withdraw -->
-                                     <div class="modal fade modal-btc-withdraw modal-btc-cash-withdraw" id="abLitecoinWithdraw" tabindex="-1" role="dialog" aria-labelledby="abLitecoinWithdrawTitle" aria-hidden="true">
+                                    <!-- MODAL Account Balance LITECOIN Withdraw -->
+                                    <div class="modal fade modal-btc-withdraw" id="abLitecoinWithdraw" tabindex="-1" role="dialog" aria-labelledby="abLitecoinWithdrawTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block pb-0">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="mt-4">
+                                                        <img src="./images/LTC-medium.png" alt="" class="mb-2 accounts-logo">
+                                                        <h6 class="modal-title" id="exampleModalLongTitle">LITECOIN WITHDRAWAL</h6>
+                                                        <div class="row">
+                                                            <div class="col-sm-10 offset-sm-1 pt-2">
+                                                                <small class="d-block">1000.0000 LTC current balance in wallet.</small>
+                                                                <small class="d-block">0.0000 LTC held on orders.</small>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="modal-divider mb-0">
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body pt-2">
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    1. Minimum withdrawal amount 0.0020000 LTC.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small class="text-primaryDark">
+                                                                    2. DLTC will only be sent to M* Multisig wallet address. These address start
+                                                                    with M.
+                                                                </small>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">LTC Withdrawal Address</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="" class="mb-0 pt-2 mr-2 text-md-right">Amount</label>
+                                                        <input type="text" class="form-control bg-gray" placeholder="" aria-label="" aria-describedby="btcButton">
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-outline-secondary border-0 bg-primary text-white" type="button" id="btcButton">
+                                                                LTC
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div>
+                                                        <small class="d-block">Transaction Fee:</small>
+                                                        <small class="text-danger">-0.0005000</small>
+                                                    </div>
+
+                                                    <hr class="modal-divider mb-0">
+
+                                                    <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abLitecoinWithdrawStep2" data-dismiss="modal" aria-label="Close">
+                                                        WITHDRAW 1.0000 LTC
+                                                    </button>
+
+                                                    <div class="modal-btc-withdraw__disclaimer">
+                                                        <p class="font-weight-bold mb-0">Please Note</p>
+                                                            <li>
+                                                                <small>
+                                                                    Once you have submitted your withdrawal request, we will send a confirmation email. Please then click on the confirmation link in your email.
+                                                                </small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    After making a withdrawal, you can track its progress on the transactions page.
+                                                                </small>
+                                                            </li>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <!-- <div class="modal fade modal-btc-withdraw modal-btc-cash-withdraw" id="abLitecoinWithdraw" tabindex="-1" role="dialog" aria-labelledby="abLitecoinWithdrawTitle" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content px-3 pb-3">
                                                 <div class="modal-header border-0 text-center d-block pb-0">
@@ -1037,7 +1198,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
     
                                     <!-- MODAL Account Balance LITECOIN Withdraw Step 2 -->
                                     <div class="modal fade modal-btc-withdraw modal-btc-cash-withdraw modal-btc-withdraw__step-3" id="abLitecoinWithdrawStep2" tabindex="-1" role="dialog" aria-labelledby="abLitecoinWithdrawStep2Title" aria-hidden="true">
@@ -1052,7 +1213,7 @@
                                                         <img src="./images/LTC-medium.png" alt="">
                                                         <div class="d-inline-block">
                                                             <h6 class="modal-title text-primaryDark font-weight-bold" id="exampleModalLongTitle">0.0000 LTC</h6>
-                                                            <h5 class="font-weight-normal text-primaryDark">$USD 7000.00/1 LTC</h5>
+                                                            <h5 class="font-weight-normal text-primaryDark">$USD 68.00/1 LTC</h5>
                                                         </div>
                                                     </div>
 
@@ -1063,14 +1224,14 @@
                                                 <div class="modal-body pt-2">
                                                     <div>
                                                         <small class="d-block">Withdraw Address</small>
-                                                        <small class="font-weight-bold">My Bitcoin Wallet</small>
+                                                        <small class="font-weight-bold">My Litecoin Wallet</small>
                                                     </div>
                                                     
                                                     <hr class="modal-divider">
 
                                                     <div>
                                                         <small class="d-block">Depositing to</small>
-                                                        <small class="font-weight-bold">1tridfatSLHRtKNngkdXmemesR76b53LETtpyT</small>
+                                                        <small class="font-weight-bold">1BoatSLRHtKNngkdXmemesR76b53LETtpyT</small>
                                                     </div>
 
                                                     <hr class="modal-divider">
@@ -1097,7 +1258,7 @@
                                                     <hr class="modal-divider">
                                                         
                                                     <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-target="#abLitecoinWithdrawStep3" data-dismiss="modal" aria-label="Close">
-                                                        WITHDRAW 1.0000 LTC 
+                                                        WITHDRAW LTC 
                                                     </button>
                                                 </div>
                                             </div>
@@ -1120,7 +1281,7 @@
                                                 
                                                 <div class="modal-body pt-2">
                                                     <small class="d-block">
-                                                        Withdrawal request received. You will receive an email confirm the withdrawal. The email request will expire after 3 hours.
+                                                        Withdrawal request received. You will receieve an email to confirm the withdrawal. The email request will expire after 48 hours.
                                                     </small>
                                                         
                                                     <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" data-toggle="modal" data-dismiss="modal" aria-label="Close">
