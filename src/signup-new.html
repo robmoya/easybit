@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easybit Homepage</title>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
+</head>
+
+<body class="signup-new">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">x    x   
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo-easybit.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index-new.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trade.html">TRADE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./funds.html">FUNDS</a>
+                    </li>
+                    <li class="nav-item active" >
+                        <a class="nav-link" href="./signup-new.html"><i class="fa fa-user"></i>PROFILE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tickers -->
+    <div class="bg-dark mt-5 pt-5">
+        <div class="container">
+            <div class="row pb-1">
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="d-flex flex-column">
+                        <div class="balance-group">
+                            <span class="btc-icon"></span>
+                            <small>
+                                <span class="text-white ml-1">Bitcoin</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-green">Buy:</span>
+                                <span class="text-white">$7,000.00</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-red">Sell:</span>
+                                <span class="text-white">$ 6,575,00</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="ltc-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Litecoin</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$68.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$55.00</span>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="btc-icon btc-cash-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Bitcoin Cash</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$535.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$502.00</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Balances -->
+    <section class="bg-gray py-5 services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-2">
+					<div class="row">
+						<div class="container">
+							<div class="card bg-white px-4 py-4">
+								<div class="card-body p-2">
+										<div class="tab-pane fade show active" id="cad" role="tabpanel" aria-labelledby="cad-tab">
+												<ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
+													<li class="nav-item">
+														<a class="nav-link active show" id="countryResidence-tab" data-toggle="tab" href="#countryResidence" role="tab" aria-controls="countryResidence" aria-selected="false">
+															<small>
+																1. Country of Residence
+															</small>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" id="accountDetails-tab" data-toggle="tab" href="#accountDetails" role="tab" aria-controls="false" aria-selected="true">
+															<small>
+																2. Account details
+															</small>
+														</a>
+													</li>
+													<li class="nav-item">
+														<a class="nav-link" id="reviewDetails-tab" data-toggle="tab" href="#reviewDetails" role="tab" aria-controls="false" aria-selected="true">
+															<small>
+																3. Review Your Details
+															</small>
+														</a>
+													</li>
+												</ul>
+												<div class="tab-content cad-tabs-content">
+
+													<!-- Country residence tab -->
+													<div class="tab-pane active show" id="countryResidence" role="tabpanel" aria-labelledby="countryResidence-tab">
+														<div>
+															<div class="form-group">
+																<label>Country of Residence</label>
+																<select class="custom-select bg-gray" required>
+																	<option value="" selected>Canada</option>
+																	<option value="">United States of America</option>
+																	<option value="">United Kingdom</option>
+																</select>
+																<small class="form-text text-muted">Your account will be subject to the law of your Country of Residence.</small>
+															</div>
+															<div class="form-group">
+																<button class="btn btn-primary d-block my-0 mx-auto text-white px-5">NEXT</button>
+															</div>
+														</div>
+													</div>
+							
+													<!-- Account details tab -->
+													<div class="tab-pane" id="accountDetails" role="tabpanel" aria-labelledby="accountDetails-tab">
+														<div class="row">
+															<p>
+																<a class="text-primary btn btn-sm">
+																	< BACK
+																</a>
+															</p>
+															<form>
+																<div class="form-row">
+																	<div class="form-group col-sm-12">
+																	<label for="emailAddress">EMAIL ADDRESS</label>
+																	<input type="text" class="form-control bg-gray" id="emailAddress" placeholder="" required>
+																	<small class="form-text text-muted">This email address will be used to sign in to your account. Make sure it is a valid address.</small>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																	<label for="inputPassword">PASSWORD</label>
+																	<input type="password" class="form-control bg-gray" id="inputPassword" placeholder="" required>
+																	<small class="form-text text-muted">Password must have at least 8 characters and contain at least 1 lowercase letter, 1 uppercase letter,
+																		and 1 number.</small>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																	<label for="rePassword">RE-ENTER PASSWORD</label>
+																	<input type="password" class="form-control bg-gray" id="rePassword" placeholder="" required>
+																	<small class="form-text text-muted">Re-type password.</small>
+																	</div>
+																</div>
+
+																<div class="form-row form-row__message">
+																	<div class="form-group col-sm-8">
+																	<label for="firstName">FIRST NAME</label>
+																	<input type="text" class="form-control bg-gray" id="firstName" placeholder="" required>
+																	</div>
+																	<div class="form-group col-sm-4">
+																	<label for="middleInitial">MIDDLE INITIAL</label>
+																	<input type="text" class="form-control bg-gray" id="middleInitial" placeholder="">
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																	<label for="lastName">LAST NAME</label>
+																	<input type="text" class="form-control bg-gray" id="lastName" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																	<label for="address">ADDRESS</label>
+																	<input type="text" class="form-control bg-gray" id="address" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="form-row form-row__message">
+																	<div class="form-group col-sm-8">
+																	<label for="country">Country</label>
+																	<select class="form-control bg-gray custom-select" id="country" required>
+																		<option value="" selected></option>
+																		<option value="">Country 1</option>
+																		<option value="">Country 2</option>
+																	</select>
+																	</div>
+																	<div class="form-group col-sm-4">
+																	<label for="postalCode">POSTAL CODE</label>
+																	<input type="text" class="form-control bg-gray" id="postalCode" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																	<label for="phoneNo">PHONE NO</label>
+																	<input type="tel" class="form-control bg-gray" id="phoneNo" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12">
+																		<label for="mobileNumber">MOBILE NUMBER</label>
+																		<input type="tel" class="form-control bg-gray" id="mobileNumber" placeholder="" required>
+																		<small class="form-text text-muted">
+																			Mobile number is required for 2FA via SMS. You will receive a one time 6 digit password via SMS and email every time you log in.
+																		</small>
+																	</div>
+																</div>
+
+																<div class="form-row form-row__message">
+																	<div class="form-group col-sm-12">
+																	<label for="occupation">OCCUPATION</label>
+																	<select class="form-control bg-gray custom-select" id="occupation" required>
+																		<option value="" selected></option>
+																		<option value="">Occupation 1</option>
+																		<option value="">Occupation 2</option>
+																	</select>
+																	</div>
+																</div>
+
+																<div class="form-row form-row__message">
+																	<div class="form-group col-sm-6">
+																	<label for="idType">ID TYPE</label>
+																	<input type="text" class="form-control bg-gray" id="idType" placeholder="" required>
+																	</div>
+																	<div class="form-group col-sm-6">
+																	<label for="idNumber">ID NUMBER</label>
+																	<input type="text" class="form-control bg-gray" id="idNumber" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="form-row form-row__message">
+																	<div class="form-group col-sm-6">
+																	<label for="issueDate">ISSUED DATE</label>
+																	<input type="text" class="form-control bg-gray" id="issueDate" placeholder="" required>
+																	</div>
+																	<div class="form-group col-sm-6">
+																	<label for="expirationDate">EXPIRATION DATE</label>
+																	<input type="text" class="form-control bg-gray" id="expirationDate" placeholder="" required>
+																	</div>
+																</div>
+
+																<div class="row">
+																	<div class="form-group col-sm-12 mb-0">
+																	<label for="">UPLOAD IMAGE OF ID</label>
+																	<input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="{count} files selected"
+																		multiple onchange="loadFile(event)" />
+																	<label for="file-1 text-white">
+																		<span>Choose file</span>
+																	</label>
+
+																	<div class="img-preview mt-3 mb-0">
+																		<h5 id="titlePreview">NO IMAGE SELECTED</h5/>
+																		<img id="output" />
+																	</div>
+																	<small class="form-text text-muted mb-3">Make sure image is of high resolution.</small>
+																	</div>
+																</div>
+
+																<div class="form-group mt-0">
+																	<button class="btn btn-primary d-block mb-0 mb-3 mx-auto text-white px-5">NEXT</button>
+																	<small class="form-text text-muted">I have verified all the details are accurate and correct.</small>
+																</div>
+															</form>
+														</div>
+													</div>
+
+													<!-- Account details tab -->
+													<div class="tab-pane" id="reviewDetails" role="tabpanel" aria-labelledby="reviewDetails-tab">
+														<div class="row">
+															<div class="container">
+																	<p>
+																		<a class="text-primary btn btn-sm">
+																			< BACK
+																		</a>
+																	</p>
+			
+																<p>Review Your Details</p>
+													
+																<div class="p-4">
+																<label>Basic Information</label>
+																<dl class="row">
+																	<dt class="col-sm-4 text-right">Email Address</dt>
+																	<dd class="col-sm-8">kimerlane@gmail.com</dd>
+																</dl>
+																<dl class="row">
+																	<dt class="col-sm-4 text-right">Country of Residence</dt>
+																	<dd class="col-sm-8">Canada</dd>
+																</dl>
+																<dl class="row">
+																	<dt class="col-sm-4 text-right">Type</dt>
+																	<dd class="col-sm-8">Personal</dd>
+																</dl>
+																<hr>
+																<label>Personal Information</label>
+																<dl class="row">
+																	<dt class="col-sm-4 text-right">Full Name</dt>
+																	<dd class="col-sm-8">Kim Maglalang</dd>
+																</dl>
+																</div>
+																<hr>
+																<div class="form-group">
+																<div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="agreeTerms">
+																	<label class="custom-control-label" for="agreeTerms">I Agree with
+																	<a href="">Terms and Conditions</a>
+																	</label>
+																</div>
+																</div>
+																<div class="form-group">
+																	<button class="btn btn-primary d-block my-0 mx-auto text-white px-5">NEXT</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+										</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img src="./images/logo-easybit.png" alt="">
+                    <p class="text-muted">Copyright</p>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <strong class="d-block mb-2">About Us</strong>
+                    <ul class="list-unstyled">
+                        <li class="pb-2">
+                            <a class="text-white" href="#">FAQs</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">End User Agreement</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">
+                                About Easybit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3">
+                    <strong class="d-block mb-2">Archive</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <a class="text-white" href="#">News Archive</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                    <strong class="d-block mb-2">Contact Us</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <img src="./images/icon-phone.png" alt="">
+                            <a class="text-white" href="#">1.800.888.8888</a>
+                        </li>
+                        <li class="pb-2">
+                            <img src="./images/icon-email.png" alt="">
+                            <a class="text-white" href="#">Send email</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <strong class="d-block mb-2">Subscribe</strong>
+                    <p class="text-white">Sign up for Alerts, Special Offers, Education and Updates.</p>
+                    <div class="search">
+                        <input type="text" class="form-control py-3" placeholder="Enter your email">
+                        <span class="search-action">
+                            <img src="./images/arrow-right.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src='app.bundle.js'></script>
+</body>
+
+</html>

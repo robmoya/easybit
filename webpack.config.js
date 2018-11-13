@@ -136,6 +136,12 @@ module.exports = {
       template: './src/trade.html',
       filename: 'trade.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Profile',
+      hash: true,
+      template: './src/signup-new.html',
+      filename: 'signup-new.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,
