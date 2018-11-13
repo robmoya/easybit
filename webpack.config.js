@@ -142,6 +142,12 @@ module.exports = {
       template: './src/signup-new.html',
       filename: 'signup-new.html'
     }),
+    new HtmlWebpackPlugin({
+      title: 'Sign in',
+      hash: true,
+      template: './src/signin-new.html',
+      filename: 'signin-new.html'
+    }),
     // new HtmlWebpackPlugin({
     //   title: 'Buy',
     //   hash: true,

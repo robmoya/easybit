@@ -55,6 +55,8 @@ select {
 }
 .bg-waves {
   background-image: url('./images/section3-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bg-bubbles {
   background-image: url('./images/bubbles.png');
@@ -745,7 +747,9 @@ hr {
 // ** New design homepage ** //
 .homepage,
 .funds,
-.trade {
+.trade,
+.signup-new,
+.signin-new {
   small {
     color: $small-gray;
   }
