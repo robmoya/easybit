@@ -119,6 +119,24 @@ module.exports = {
       filename: 'log-security-name.html'
     }),
     new HtmlWebpackPlugin({
+      title: 'User agreement',
+      hash: true,
+      template: './src/user-agreement.html',
+      filename: 'user-agreement.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'User agreement',
+      hash: true,
+      template: './src/faq.html',
+      filename: 'faq.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'User agreement',
+      hash: true,
+      template: './src/privacy.html',
+      filename: 'privacy.html'
+    }),
+    new HtmlWebpackPlugin({
       title: 'Contact',
       hash: true,
       template: './src/contact.html',
