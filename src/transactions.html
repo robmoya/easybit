@@ -9,7 +9,7 @@
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script> -->
 </head>
 
-<body>
+<body class="app">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -47,78 +47,71 @@
   </nav>
 
   <!-- Tickers -->
-  <div class="bg-dark mt-5 pt-5">
-    <div class="container">
-      <div class="row pb-1">
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <span class="text-muted">graph</span>
+    <div class="bg-dark mt-5 pt-5">
+        <div class="container">
+            <div class="row pb-1">
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="d-flex flex-column">
+                        <div class="balance-group">
+                            <span class="btc-icon"></span>
+                            <small>
+                                <span class="text-white ml-1">Bitcoin</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-green">Buy:</span>
+                                <span class="text-white">$7,000.00</span>
+                            </small>
+
+                            <small class="ml-3">
+                                <span class="text-red">Sell:</span>
+                                <span class="text-white">$ 6,575,00</span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="ltc-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Litecoin</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$68.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$55.00</span>
+                        </small>
+                    </div>
+                </div>
+
+                <div class="col py-2 d-flex justify-content-between bg-dark">
+                    <div class="balance-group">
+                        <span class="btc-icon btc-cash-icon"></span>
+                        <small>
+                            <span class="text-white ml-1">Bitcoin Cash</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-green">Buy:</span>
+                            <span class="text-white">$535.00</span>
+                        </small>
+
+                        <small class="ml-3">
+                            <span class="text-red">Sell:</span>
+                            <span class="text-white">$502.00</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <span class="text-muted">graph</span>
-        </div>
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <span class="text-muted">graph</span>
-        </div>
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <span class="text-muted">graph</span>
-        </div>
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <small class="text-muted">graph</small>
-        </div>
-        <div class="col py-2 d-flex justify-content-between list-group-item bg-dark border-secondary border-bottom-0">
-          <div class="d-flex flex-column">
-            <small class="font-weight-bold">
-              <span class="text-white">Bitcoin</span>
-              <span class="text-success">+23.00</span>
-            </small>
-            <small class="text-muted">24743.00 -0.09%</small>
-            <small class="text-muted">6:05 AM</small>
-          </div>
-          <span class="text-muted">graph</span>
-        </div>
-      </div>
     </div>
-  </div>
 
   <section class="bg-full bg-bubbles py-5">
     <div class="container transactions">
@@ -415,22 +408,70 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark text-muted">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="./images/logo-easybit.png" alt="">
-          <p class="text-muted">Copyright</p>
+    <footer class="py-5 bg-dark text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img src="./images/logo-easybit.png" alt="">
+                    <p class="text-muted">Copyright</p>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <strong class="d-block mb-2">About Us</strong>
+                    <ul class="list-unstyled">
+                        <li class="pb-2">
+                            <a class="text-white" href="/faq.html">FAQs</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Pricing</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="/user-agreement.html">End User Agreement</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="privacy.html">Privacy Policy</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">
+                                About Easybit
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-3">
+                    <strong class="d-block mb-2">Archive</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <a class="text-white" href="#">News Archive</a>
+                        </li>
+                        <li class="pb-2">
+                            <a class="text-white" href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                    <strong class="d-block mb-2">Contact Us</strong>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pb-2">
+                            <img src="./images/icon-phone.png" alt="">
+                            <a class="text-white" href="#">1.800.888.8888</a>
+                        </li>
+                        <li class="pb-2">
+                            <img src="./images/icon-email.png" alt="">
+                            <a class="text-white" href="#">Send email</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <strong class="d-block mb-2">Subscribe</strong>
+                    <p class="text-white">Sign up for Alerts, Special Offers, Education and Updates.</p>
+                    <div class="search">
+                        <input type="text" class="form-control py-3" placeholder="Enter your email">
+                        <span class="search-action">
+                            <img src="./images/arrow-right.png" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-4">
-          <strong>Additional Pages</strong>
-        </div>
-        <div class="col-sm-4">
-          <strong>Subscribe</strong>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
 
