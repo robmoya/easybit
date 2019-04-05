@@ -116,13 +116,13 @@
 
   <!-- Sign Up -->
 
-  <section class="bg-full bg-bubbles py-5">
+  <section class="bg-full bg-waves py-5 signup-page">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 m-auto">
           <div class="d-flex justify-content-center align-items-start">
 
-            <div class="card bg-light col-sm-4 px-0 py-2 mt-sm-5">
+            <div class="card bg-light col-sm-4 px-0 py-2 mt-sm-5 d-none d-md-block">
               <div class="card-body p-2">
                 <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <li class="nav-item">
@@ -158,7 +158,9 @@
                       <small class="form-text text-muted">Your account will be subject to the law of your Country of Residence.</small>
                     </div>
                     <div class="form-group">
-                      <button class="btn btn-primary btn-block btn-lg">NEXT</button>
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="btn btn-primary btn-block btn-lg" id="account-tab" data-toggle="tab" href="#account" role="tab" aria-controls="account" aria-selected="false">NEXT</a>
+                        </div>
                     </div>
                   </div>
 
@@ -195,13 +197,16 @@
                       </div>
 
                       <div class="form-row form-row__message">
-                        <div class="form-group col-sm-8">
+                        <div class="form-group col-sm-12">
                           <label for="firstName">FIRST NAME</label>
                           <input type="text" class="form-control" id="firstName" placeholder="">
                         </div>
-                        <div class="form-group col-sm-4">
-                          <label for="middleInitial">MIDDLE INITIAL</label>
-                          <input type="text" class="form-control" id="middleInitial" placeholder="">
+                      </div>
+
+                      <div class="form-row form-row__message">
+                        <div class="form-group col-sm-12">
+                          <label for="middleName">MIDDLE NAME</label>
+                          <input type="text" class="form-control" id="middleName" placeholder="">
                         </div>
                       </div>
 
@@ -214,8 +219,27 @@
 
                       <div class="row">
                         <div class="form-group col-sm-12">
-                          <label for="address">ADDRESS</label>
+                          <label for="address">MAILING ADDRESS</label>
                           <input type="text" class="form-control" id="address" placeholder="">
+                          <small class="form-text text-muted">
+                            Below the field, enter the text "A proof of mailing will be required if your address does not match the address on the ID. 
+                            Your correct address is required in order for us to send you your prepaid Mastercard. This can be a copy of a utility bill 
+                            or bank statement."
+                          </small>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="form-group col-sm-12">
+                          <label for="city">CITY</label>
+                          <input type="text" class="form-control" id="city" placeholder="">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="form-group col-sm-12">
+                          <label for="province">PROVINCE/STATE</label>
+                          <input type="text" class="form-control" id="province" placeholder="">
                         </div>
                       </div>
 
@@ -241,25 +265,25 @@
                         </div>
                       </div>
 
-                      <div class="form-row form-row__message">
+                      <div class="row">
                         <div class="form-group col-sm-12">
-                          <label for="ocupation">OCUPATION</label>
-                          <select class="form-control custom-select" id="ocupation">
-                            <option value="" selected></option>
-                            <option value="">Ocupation 1</option>
-                            <option value="">Ocupation 2</option>
-                          </select>
+                          <label for="occupation">OCCUPATION</label>
+                          <input type="text" class="form-control" id="occupation" placeholder="">
                         </div>
                       </div>
 
                       <div class="form-row form-row__message">
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-sm-4">
                           <label for="idType">ID TYPE</label>
                           <input type="text" class="form-control" id="idType" placeholder="">
                         </div>
-                        <div class="form-group col-sm-6">
+                        <div class="form-group col-sm-4">
                           <label for="idNumber">ID NUMBER</label>
                           <input type="text" class="form-control" id="idNumber" placeholder="">
+                        </div>
+                        <div class="form-group col-sm-4">
+                          <label for="placeIssue">PLACE OF ISSUE</label>
+                          <input type="text" class="form-control" id="placeIssue" placeholder="">
                         </div>
                       </div>
 
@@ -351,7 +375,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="py-5 bg-warning">
+  <!-- <section class="py-5 bg-warning">
     <div class="container">
       <div class="row ">
         <div class="col">
@@ -392,7 +416,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
     <footer class="py-5 bg-dark text-muted">
