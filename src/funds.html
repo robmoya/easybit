@@ -294,7 +294,7 @@
                                                     <div>
                                                         <ul class="list-unstyled">
                                                             <li>
-                                                                <small>1. Allow 1-3 days processing time.</small>
+                                                                <small>1. Allow 1-3 banking days processing time.</small>
                                                             </li>
                                                             <li>
                                                                 <small>
@@ -319,6 +319,68 @@
                                                     </div>
                                                     <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
                                                         data-toggle="modal" data-target="#abFiatDepositInteractTransferStep3"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        Continue <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step2 by Bank Wire Transfer  --> 
+                                    <div class="modal fade" id="abFiatDepositBankWireStep2" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep2Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Bank Wire Transfer</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="font-weight-bold mb-1">Enter amount to send</p>
+                                                    <div class="input-group col-xl-8 mb-3 pl-0">
+                                                        <input type="text" class="form-control bg-gray text-right" placeholder="$ 3,000.00"
+                                                            aria-label="$ 3,000.00">
+                                                    </div>
+                                                    
+                                                    <p class="mb-1">Terms and conditions</p>
+                                                    <div>
+                                                        <ul class="list-unstyled">
+                                                            <li>
+                                                                <small>1. Allow 4-5 banking days processing time.</small>
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    2. Funding fee is 2.5%. This will be applied to the total amount received. The 
+                                                                    amount net of fees will be credited to your fund balance.
+                                                                </small> 
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    3. Additional $150 CAD fee for mismatching names. Name for Easybit account does not
+                                                                    match the name of the bank account.
+                                                                </small> 
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    4. Failure to property comply with outline instructions will lead to aditional fees.
+                                                                </small> 
+                                                            </li>
+                                                            <li>
+                                                                <small>
+                                                                    5. Additional $100 CAD fee for underfunding.
+                                                                </small> 
+                                                            </li>
+                                                        </ol>
+                                                        <div class="my-2">
+                                                            <input type="checkbox" name="termsAndconditions" value="" class="mr-2">
+                                                            <small>I agree with terms and conditions</small>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
+                                                        data-toggle="modal" data-target="#abFiatDepositBankWireStep3"
                                                         data-dismiss="modal" aria-label="Close">
                                                         Continue <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
                                                     </button>
@@ -392,7 +454,7 @@
                                                     <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
                                                         data-toggle="modal" data-target="#abFiatDepositStep4"
                                                         data-dismiss="modal" aria-label="Close">
-                                                        Continue <smal class="ml-2 text-orange h6"><i class="fas fa-chevron-right"></i></smal>
+                                                        Continue <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
                                                     </button>
                                                 </div>
                                             </div>
@@ -463,7 +525,34 @@
                                                     <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
                                                         data-toggle="modal" data-target="#abFiatDepositStep4"
                                                         data-dismiss="modal" aria-label="Close">
-                                                        Continue <smal class="ml-2 text-orange h6"><i class="fas fa-chevron-right"></i></smal>
+                                                        Continue  <smal class="ml-2 text-primary h6"><i class="fas fa-chevron-right"></i></smal>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 3 by Bank Wire Transfer  --> 
+                                    <div class="modal fade" id="abFiatDepositBankWireStep3" tabindex="-1" role="dialog"
+                                        aria-labelledby="abFiatDepositStep4Title" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content px-3 pb-3">
+                                                <div class="modal-header border-0 text-center d-block">
+                                                    <button type="button" class="close d-block text-right" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle">
+                                                        Bank wire transfer requested submitted
+                                                    </h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p class="py-2 px-md-4 text-justify">
+                                                        Deposit request received. You will receive an email with addition wire transfer details and instructions. Allow
+                                                        4-5 days banking days to process the transaction. 
+                                                    </p>
+                                                    <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button" data-dismiss="modal" aria-label="Close">
+                                                        Close <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
                                                     </button>
                                                 </div>
                                             </div>
@@ -471,6 +560,7 @@
                                     </div>
 
                                     <!--MODAL Account Balance FIAT Deposit STEP-4-->
+                                    <!-- Step 4 by Inteact E-Transfer  --> 
                                     <div class="modal fade" id="abFiatDepositStep4" tabindex="-1" role="dialog"
                                         aria-labelledby="abFiatDepositStep4Title" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -486,12 +576,12 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <p class="py-2 px-md-4 text-justify">
-                                                        Deposit request received. This amount will show up in your wallet 
-                                                        balance but will not be withdrawable until the deposit has been 
-                                                        received and processed. Allow 1-3 days processing time.
+                                                        Your Interact Email Transfer request been submitted. This amount will show up in your wallet
+                                                        balance but will not be withdrawable until the deposit has been received and processed. Allow
+                                                        4-5 banking days to process the transaction.
                                                     </p>
                                                     <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button" data-dismiss="modal" aria-label="Close">
-                                                        Close
+                                                        Close <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
                                                     </button>
                                                 </div>
                                             </div>
@@ -1743,7 +1833,11 @@
 
             if(value === 'interactETransfer') {
                 btn.dataset.target = '#abFiatDepositInteractTransferStep2';
-            } else {
+            } 
+            else if(value === 'bankWireTransfer') {
+                btn.dataset.target = '#abFiatDepositBankWireStep2';
+            } 
+            else {
                 btn.dataset.target = '#abFiatDepositStep2';
             }            
         }
