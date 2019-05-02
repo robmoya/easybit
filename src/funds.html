@@ -210,58 +210,88 @@
                                                         aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">DEPOSIT
-                                                        USD$/CAD$</h5>
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">CREDIT CARD DEPOSIT</h5>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
-                                                    <form class="col-xl-8 pl-0">
+                                                    <div class="d-flex align-items-center justify-content-around px-5 mb-2">
+                                                        <p class="font-weight-bold mb-1">Easybit only accepts</p>
+                                                        <img src="./images/credit-card-icon.png" alt="">
+                                                    </div>
+                                                    <hr>
+                                                    <form class="col-xl-12 pl-0">
                                                         <div class="form-row">
                                                             <div class="form-group col-sm-12">
-                                                                <select name="product" class="custom-select bg-gray">
-                                                                    <option value="BITCOIN BTC">Interac Email Transfer
-                                                                        (CAD$ Only)</option>
-                                                                    <option value="BITCOIN BTC2">BITCOIN (BTC2)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC3)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC4)</option>
-                                                                    <option value="BITCOIN BTC3">BITCOIN (BTC5)</option>
-                                                                </select>
+                                                                <label for="card-name">CARDHOLDER'S NAME</label>
+                                                                <input name="card-name" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                            <div class="form-group col-sm-12">
+                                                                <label for="card-number">CARD NUMBER</label>
+                                                                <input name="card-number" type="text" class="form-control bg-gray text-left" placeholder="8888 8888 8888 8888"
+                                                                aria-label="8888 8888 8888 8888">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12 col-md-6 mb-md-2">
+                                                                <label for="expiration-date">EXPIRATION DATE (MM/YY)</label>
+                                                                <input name="expiration-date" type="text" class="form-control bg-gray text-left" placeholder="MM/YY"
+                                                                aria-label="MM/YY">
+                                                            </div>
+                                                            <div class="form-group col-sm-12 col-md-6 mb-md-2">
+                                                                <label for="cvv">CVV2</label>
+                                                                <input name="cvv" type="text" class="form-control bg-gray text-left" placeholder="000"
+                                                                aria-label="000">
+                                                            </div>
+
+                                                            <div class="col-sm-12 mb-4">
+                                                                <input type="checkbox" name="termsAndconditions" value="">
+                                                                <small>Check here if you billing address is the same as your proof of address</small>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12">
+                                                                <label for="street-address">STREET ADDRESS</label>
+                                                                <input name="street-address" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12 col-md-6">
+                                                                <label for="city">CITY</label>
+                                                                <input name="city" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                            <div class="form-group col-sm-12 col-md-6">
+                                                                <label for="postal-code">POSTAL CODE</label>
+                                                                <input name="postal-code" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12 col-md-6 mb-md-2">
+                                                                <label for="country">COUNTRY</label>
+                                                                <input name="country" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                            <div class="form-group col-sm-12 col-md-6 mb-md-2">
+                                                                <label for="province">PROVINCE</label>
+                                                                <input name="province" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-sm-12 col-md-6 mx-md-auto">
+                                                                <label for="amount"class="text-center d-block w-100">AMOUNT TO DEPOSIT (USD)</label>
+                                                                <input name="amount" type="text" class="form-control bg-gray text-left" placeholder=""
+                                                                aria-label="">
                                                             </div>
                                                         </div>
                                                     </form>
-
-                                                    <p class="font-weight-bold mb-1">Select Deposit Type</p>
-                                                    <div class="input-group col-xl-8 mb-3 pl-0">
-                                                        <input type="text" class="form-control bg-gray text-right" placeholder="$ 1,000.00"
-                                                            aria-label="$ 1,000.00">
-                                                    </div>
-                                                    
-                                                    <p class="mb-1">Terms and conditions</p>
-                                                    <div>
-                                                        <ul class="list-unstyled">
-                                                            <li>
-                                                                <small>1. Allow 1-3 days processing time.</small>
-                                                            </li>
-                                                            <li>
-                                                                <small>
-                                                                    2. Funding fee is 2.5%. This will be applied to the total amount received. The 
-                                                                    amount net of fees will be credited to your fund balance.
-                                                                </small> 
-                                                            </li>
-                                                            <li>
-                                                                <small>
-                                                                    3. To fund your account using Interac e-Transfer, log into your Canadian financial 
-                                                                    institution's online banking and initiate the transfer using the parameters set
-                                                                    when you click on CONTINUE. Use copy and paste to ensure accuracy. Failing 
-                                                                    to enter the correct message and secret answer in your transfer may result in 
-                                                                    a longer wait time or a rejected transaction.
-                                                                </small> 
-                                                            </li>
-                                                        </ol>
-                                                        <div class="my-2">
-                                                            <input type="checkbox" name="termsAndconditions" value=""><small>I agree with terms and conditions</small>
-                                                        </div>
-                                                    </div>
                                                     <button class="btn btn-primary d-block my-0 mx-auto text-white" type="button"
                                                         data-toggle="modal" data-target="#abFiatDepositStep3"
                                                         data-dismiss="modal" aria-label="Close">
