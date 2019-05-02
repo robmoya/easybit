@@ -176,7 +176,7 @@
                                                                     name="product"
                                                                     class="custom-select bg-gray"
                                                                     id="depositFiat"
-                                                                    onchange="getCurrentValue('depositFiat', 'fiatBtnStep1')"
+                                                                    onchange="setStep('depositFiat', 'fiatBtnStep1')"
                                                                 >
                                                                     <option value="creditCard">Credit Card Deposit (CAD$/USD$)</option>
                                                                     <option value="interactETransfer">Interact E-Transfer (CAD$ Only</option>
@@ -1232,38 +1232,58 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Send your Litecoins (LTC) to this address</p>
-                                                    <div class="input-group mb-3">
+                                                    <div class="disclaimer text-red pb-2">
+                                                        <small>
+                                                            <span class="font-weight-bold">Warning!</span> If you send to the wrong wallet your Litecoin(LTC)
+                                                            will not be credit to you.
+
+                                                        </small>
+                                                    </div>
+                                                    <!-- <p>Send your Litecoins (LTC) to this address</p> -->
+                                                    <p class="mb-0">
+                                                        If your wallet begins with "M" send your Litecoin (LTC) to this address:
+                                                    </p>
+                                                    <div class="input-group my-1">
                                                         <input type="text" class="form-control bg-gray" placeholder="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
                                                             aria-label="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
                                                             aria-describedby="copyButton">
                                                         <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary border-0 btn-balance__deposit text-white"
+                                                            <button class="btn btn-primary border-0"
                                                                 type="button" id="copyButton">Copy</button>
                                                         </div>
                                                     </div>
-                                                    <p>
-                                                        If your wallet does not support sending to new M* LTC Multsig
-                                                        addresses click
-                                                        <span class="highlight">here</span> to get o get your
-                                                        compatible LTC Multisig address starting with 3*.
+                                                    <p class="mb-0">
+                                                        If your wallet begins with "3" please click the button bellow.
                                                     </p>
-                                                    <p class="mb-0">Send your Litecoin (LTC) to this Multisig address:</p>
-                                                    <div class="input-group multisig-address mb-3">
-                                                        <input type="text" class="form-control border-1" placeholder="3CXL2jyXDx9u8gWhas82P6JKbQCDbvFaqz"
-                                                            aria-label="3CXL2jyXDx9u8gWhas82P6JKbQCDbvFaqz"
-                                                            aria-describedby="copyButton">
+
+                                                    <div class="col-sm-12">
+                                                        <button class="btn btn-primary d-block my-3 mx-auto text-white" type="button" onclick="showCode()">
+                                                            CLICK HERE <smal class="ml-2 text-primaryDark h6"><i class="fas fa-chevron-right"></i></smal>
+                                                        </button>
                                                     </div>
-                                                    <div class="qr-code text-center">
-                                                        <img src="./images/qr.png" alt="">
-                                                    </div>
-                                                    <div class="disclaimer text-red pb-2">
-                                                        <small>
-                                                            Note: Only Litecoin (LTC) may be sent to the wallet address
-                                                            above.
-                                                            Deposits of any other cryptocurrency will not get credited
-                                                            to your account.
-                                                        </small>
+
+                                                    <div class="d-none" id="litecoinImage">
+                                                        <p class="mb-0">Send your Litecoin (LTC) to this wallet address if your wallet begins with "3".</p>
+                                                        <div class="input-group my-1">
+                                                            <input type="text" class="form-control bg-gray" placeholder="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
+                                                                aria-label="MJjULdPVB51KwBnbgk7NCjYiv6nfaU6tru"
+                                                                aria-describedby="copyButton">
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-primary border-0"
+                                                                    type="button" id="copyButton">Copy</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qr-code text-center">
+                                                            <img src="./images/qr.png" alt="">
+                                                        </div>
+                                                        <div class="disclaimer text-red pb-2">
+                                                            <small>
+                                                                Note: Only Litecoin (LTC) may be sent to the wallet address
+                                                                above. <br>
+                                                                Deposits of any other cryptocurrency will not get credited
+                                                                to your account.
+                                                            </small>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1813,7 +1833,7 @@
 
     <script src='app.bundle.js'></script>
     <script>
-        function getCurrentValue (id, btn) {
+        function setStep (id, btn) {
             var e = document.getElementById(id);
             var btn = document.getElementById(btn);      
             var value = e.options[e.selectedIndex].value;
@@ -1827,6 +1847,11 @@
             else {
                 btn.dataset.target = '#abFiatDepositStep2';
             }            
+        }
+
+        function showCode() {
+            var qrContainer = document.getElementById('litecoinImage');
+            qrContainer.classList.toggle('d-block');
         }
     </script>
 </body>
